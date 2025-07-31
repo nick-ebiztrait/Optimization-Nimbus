@@ -1,0 +1,17 @@
+{%- liquid
+assign template_page = template | replace: '.', '-' | handle
+-%}
+{{ 'quick-view.css' | asset_url | stylesheet_tag }}
+
+    <div class="product-quick-view-overlay"></div>
+
+{%- if template_page != 'product-quick-view' -%}
+    <div id="product-modal" class="modal product-modal isolate">
+        <div class="product-modal-content scroll-container">
+            <button class="product-modal-close close-modal" tabindex="0" aria-label="{{ 'accessibility.close' | t }}">{% render 'icon-close' %}</button>
+            <div id="product-modal-content" class="product-quick-view-content">
+            </div>
+        </div>
+    </div>
+{%- endif -%}
+
