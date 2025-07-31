@@ -1,0 +1,278 @@
+
+{%  liquid 
+  assign wave_text_type = section.settings.wave_text_type
+  assign path_type = section.settings.path_type
+  assign bg_color = section.settings.bg_color
+  assign text_color = section.settings.text_color
+  if bg_color == 'rgba(0,0,0,0)' or bg_color == blank
+    assign bg_color = 'none'
+  else 
+    assign bg_color = section.settings.bg_color
+  endif
+  if text_color == 'rgba(0,0,0,0)' or text_color == blank
+    assign text_color = 'var(--color-foreground)'
+  else 
+    assign text_color = section.settings.text_color
+  endif
+
+%}
+<div class="wave-text-container relative section-padding pointer-events-none" {% render 'section-properties' %}>
+  <div class="wave-text-container__path">
+    <wave-text class="block" 
+    data-speed="{{ section.settings.scroll_speed }}"
+    data-direction="{{ section.settings.scroll_direction }}" 
+    data-trigger="{{ wave_text_type }}" style="--wave-scale: {{ section.settings.wave_scale }}%;--wave-scale-mobile: {{ section.settings.wave_scale_mobile }}%;">
+    {% if path_type == 'path-1' %}
+    <svg version="1.1" class="wave-text-container__svg" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 1550 204" xml:space="preserve" >
+     <g class="wave-text-container__path-group">
+        <path d="M771.588 0.0363161C830.631 -0.525292 887.592 5.42214 945.732 18.2043C995.879 29.2343 1040.4 43.8081 1083.46 57.8483C1144.89 77.9145 1202.9 96.8688 1269.28 102.777C1343.33 109.398 1458.09 86.3667 1550 57.8483V110.162C1493.81 127.6 1442.01 138.967 1391.67 144.909C1345.34 150.379 1301.35 151.12 1257.17 147.155C1176.52 139.944 1109.42 118.019 1044.54 96.8183C961.135 69.6421 882.467 43.9204 772.884 44.9594C663.301 45.9983 586.106 73.197 504.434 101.991C440.807 124.416 375.029 147.599 294.83 156.338C250.897 161.122 206.875 161.218 160.261 156.63C109.583 151.637 57.1576 141.27 0 124.91V72.9709C93.5217 99.7371 206.512 120.22 280.133 112.201C346.126 105.012 403.019 84.9627 463.24 63.7395C505.455 48.8625 549.114 33.4801 598.594 21.501C655.958 7.61803 712.546 0.597924 771.588 0.0363161Z" fill="{{  bg_color }}" />
+      </g> 
+      <path id="text-curve-{{ section.id }}" d="M-0.5 101.5C386 222 463.332 25.1136 772.763 22.2427C1086 14.3266 1151 216.001 1550 85.0001" fill="none" />
+      <text width="100%" style="transform:translate3d(0,4px,0);" text-anchor="middle">
+        <textPath class="text-path {{ section.settings.font_size }}" alignment-baseline="center" xlink:href="#text-curve-{{ section.id }}" startOffset="0" style="fill:{{ text_color }};" >
+        <tspan> {{ section.settings.text }} </tspan>
+      </text> 
+    </svg>
+    {% elsif path_type == 'path-2' %}
+      <svg version="1.1" class="wave-text-container__svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1550 220" xml:space="preserve">
+      <g>
+        <path d="M1212.24 90.2786C1164.48 108.979 1113.56 128.464 1061.07 143.079C1005.27 158.636 954.643 166.807 905.879 167.986C842.484 169.636 773.209 159.893 687.871 137.343C657.321 129.25 626.628 120.136 596.796 111.336C553.768 98.6071 509.306 85.4071 462.549 74.4071C318.119 40.4643 155.33 29.3071 0 42.35V94.9143C142.279 81.4 292.589 90.9071 425.258 122.1C467.999 132.157 508.589 144.179 551.616 156.986C582.31 166.1 614.15 175.529 646.708 184.093C739.218 208.45 817.672 220 892.11 220C898.134 220 904.157 219.921 910.181 219.764C1042.56 216.386 1154.58 176.55 1267.31 132.393C1356.09 97.5857 1447.74 61.6786 1549 52.4071V0C1419.34 9.11429 1309.48 52.1714 1212.24 90.2786Z"  fill="{{  bg_color }}"></path>
+      </g>
+        <path id="text-curve-{{ section.id }}" d="M-2 72C155.76 54.475 296.148 67.7603 444.013 102.731C520.885 120.888 592.021 145.518 667.315 165.49C742.61 185.462 824.502 200.935 908.115 198.803C1031.17 195.646 1139.59 155.307 1239.84 115.836C1340.09 76.365 1426.23 36.9206 1549 31" fill="none"></path>
+        <text width="100%"  text-anchor="middle">
+          <textPath class="text-path {{ section.settings.font_size }}" xlink:href="#text-curve-{{ section.id }}" alignment-baseline="center" startOffset="0" style="fill:{{ text_color }};">
+            <tspan > {{ section.settings.text }} </tspan>
+          </textPath>
+          </text>    
+      </svg>
+    {% elsif path_type == 'path-3' %}
+      <svg version="1.1" class="wave-text-container__svg" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 1550 204" xml:space="preserve" >
+     <g class="wave-text-container__path-group">
+        <path d="M771.588 203.964C830.631 204.525 887.592 198.578 945.732 185.796C995.879 174.766 1040.4 160.192 1083.46 146.152C1144.89 126.085 1202.9 107.131 1269.28 101.223C1343.33 94.6017 1458.09 117.633 1550 146.152V93.8379C1493.81 76.4 1442.01 65.033 1391.67 59.0912C1345.34 53.6211 1301.35 52.8798 1257.17 56.8448C1176.52 64.0558 1109.42 85.981 1044.54 107.182C961.135 134.358 882.467 160.08 772.884 159.041C663.301 158.002 586.106 130.803 504.434 102.009C440.807 79.5843 375.029 56.4011 294.83 47.6625C250.897 42.8776 206.875 42.7821 160.261 47.3704C109.583 52.3631 57.1576 62.7304 0 79.0901V131.029C93.5217 104.263 206.512 83.7795 280.133 91.7993C346.126 98.9879 403.019 119.037 463.24 140.26C505.455 155.137 549.114 170.52 598.594 182.499C655.958 196.382 712.546 203.402 771.588 203.964Z" fill="{{  bg_color }}" />
+      </g> 
+      <path id="text-curve-{{ section.id }}" d="M-0.5 102.5C386 -18 463.332 178.886 772.763 181.757C1086 189.673 1151 -12.0008 1550 119" fill="none" />
+      <text width="100%" style="transform:translate3d(0,4px,0);" text-anchor="middle">
+        <textPath class="text-path {{ section.settings.font_size }}" alignment-baseline="center" xlink:href="#text-curve-{{ section.id }}" startOffset="0" style="fill:{{ text_color }};" >
+        <tspan> {{ section.settings.text }} </tspan>
+      </text> 
+    </svg>
+    {% elsif path_type == 'path-4' %}
+      <svg version="1.1" class="wave-text-container__svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1550 220" xml:space="preserve">
+      <g>
+        <path d="M1212.24 129.721C1164.48 111.021 1113.56 91.5357 1061.07 76.9214C1005.27 61.3643 954.643 53.1929 905.879 52.0143C842.484 50.3643 773.209 60.1071 687.871 82.6571C657.321 90.75 626.628 99.8643 596.796 108.664C553.768 121.393 509.306 134.593 462.549 145.593C318.119 179.536 155.33 190.693 0 177.65V125.086C142.279 138.6 292.589 129.093 425.258 97.9C467.999 87.8429 508.589 75.8214 551.616 63.0143C582.31 53.9 614.15 44.4714 646.708 35.9071C739.218 11.55 817.672 4.76837e-06 892.11 4.76837e-06C898.134 4.76837e-06 904.157 0.0785666 910.181 0.235709C1042.56 3.61428 1154.58 43.45 1267.31 87.6071C1356.09 122.414 1447.74 158.321 1549 167.593V220C1419.34 210.886 1309.48 167.829 1212.24 129.721Z"  fill="{{  bg_color }}"></path>
+      </g>
+        <path id="text-curve-{{ section.id }}" d="M-3 154C154.76 171.525 285.136 163.971 433 129C509.872 110.843 596.705 80.9722 672 61C747.295 41.0278 825.387 27.8686 909 30C1032.05 33.1577 1145.75 74.5292 1246 114C1346.25 153.471 1427.23 192.079 1550 198" fill="none"></path>
+        <text width="100%"  text-anchor="middle">
+          <textPath class="text-path {{ section.settings.font_size }}" xlink:href="#text-curve-{{ section.id }}" alignment-baseline="center" startOffset="0" style="fill:{{ text_color }};">
+            <tspan > {{ section.settings.text }} </tspan>
+          </textPath>
+          </text>    
+      </svg>
+    {% endif %}
+    </wave-text>
+  </div>
+</div>
+<script src="{{ 'wave-text.js' | asset_url }}" defer="defer"></script> 
+{% schema %}
+{
+  "name": "Wave text",
+  "settings": [
+    {
+      "type": "select",
+      "id": "path_type",
+      "label": "Path type",
+      "options": [
+        {
+          "value": "path-1",
+          "label": "Path 1"
+        },
+        {
+          "value": "path-2",
+          "label": "Path 2"
+        },
+        {
+          "value": "path-3",
+          "label": "Path 3"
+        },
+        {
+          "value": "path-4",
+          "label": "Path 4"
+        }
+      ],
+      "default": "path-1"
+    },
+    {
+      "type": "range",
+      "id": "wave_scale",
+      "label": "Wave scale (desktop)",
+      "min": 0,
+      "max": 100,
+      "step": 5,
+      "default": 30,
+      "unit": "%"
+    },
+    {
+      "type": "range",
+      "id": "wave_scale_mobile",
+      "label": "Wave scale (mobile)",
+      "min": 0,
+      "max": 500,
+      "step": 10,
+      "default": 200,
+      "unit": "%"
+    },
+    {
+      "type": "select",
+      "id": "wave_text_type",
+      "label": "Wave text type",
+      "options": [
+        {
+          "value": "static",
+          "label": "Static"
+        },
+        {
+          "value": "marquee",
+          "label": "Marquee"
+        },
+        {
+          "value": "scroll",
+          "label": "Scroll"
+        }
+      ],
+      "default": "static",
+      "info": "Marquee,Scroll disabled on mobile "
+    },
+    {
+      "type": "range",
+      "id": "scroll_speed",
+      "label": "Scroll speed",
+      "min": 1,
+      "max": 10,
+      "step": 1,
+      "default": 5,
+      "info": "Work with marquee and scroll"
+    },
+    {
+      "type": "select",
+      "id": "scroll_direction",
+      "label": "Scroll direction",
+      "options": [
+        {
+          "value": "normal",
+          "label": "Normal"
+        },
+        {
+          "value": "reverse",
+          "label": "Reverse"
+        } 
+      ],
+      "default": "reverse"
+    },
+    {
+      "type": "textarea",
+      "id": "text",
+      "label": "Text",
+      "default": "Nimbus designs and creates ‘Contemporary Conscious Clothing’ responsibly, using luxury fabrics, for modern women. We value our community, and we seek to celebrate and support the work of local designers, architects and artists who share an appreciation for thoughtful, minimalist design"
+    },
+    {
+      "type": "select",
+      "id": "font_size",
+      "label": "Font size",
+      "options": [
+        {
+          "value": "hxl",
+          "label": "Heading Xl"
+        },
+        {
+          "value": "h0",
+          "label": "Heading 0"
+        },
+        {
+          "value": "h1",
+          "label": "Heading 1"
+        },
+        {
+          "value": "h2",
+          "label": "Heading 2"
+        },
+        {
+          "value": "h3",
+          "label": "Heading 3"
+        },
+        {
+          "value": "h4",
+          "label": "Heading 4"
+        },
+        {
+          "value": "h5",
+          "label": "Heading 5"
+        },
+        {
+          "value": "h6",
+          "label": "Heading 6"
+        },
+        {
+          "value": "body-1",
+          "label": "Body 1"
+        },
+        {
+          "value": "body-2",
+          "label": "Body 2"
+        },
+        {
+          "value": "sub-heading",
+          "label": "Subheading"
+        }
+      ],
+      "default": "body-1"
+    },
+    {
+        "type": "header",
+        "content": "Colors"
+    },
+    {
+        "type": "color",
+        "id": "bg_color",
+        "label": "Background",
+        "default": "#FCE6CD"
+    },
+    {
+        "type": "color",
+        "id": "text_color",
+        "label": "Text",
+        "default": "#000000"
+    },
+    {
+      "type": "header",
+      "content": "Section padding"
+    },
+    {
+      "type": "range",
+      "id": "padding_top",
+      "min": 0,
+      "max": 200,
+      "step": 4,
+      "unit": "px",
+      "label": "Top padding",
+      "default": 36
+    },
+    {
+      "type": "range",
+      "id": "padding_bottom",
+      "min": 0,
+      "max": 200,
+      "step": 4,
+      "unit": "px",
+      "label": "Bottom padding",
+      "default": 36
+    }
+  ],
+  "presets": [
+    {
+      "name": "Wave text"
+    }
+  ]
+}
+{% endschema %}
+
+

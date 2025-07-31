@@ -1,0 +1,497 @@
+{%-liquid  
+  assign announcement_width = section.settings.announcement_width
+  case announcement_width
+    when 'small'
+      assign announcement_width = 'max-w-3xl'
+    when 'normal'
+      assign announcement_width = 'max-w-4xl'
+    when 'large'
+      assign announcement_width = 'container'
+    when 'stretched'
+      assign announcement_width = 'container-fluid'
+    when 'full_width'
+      assign announcement_width = 'w-full'
+  endcase
+  assign announcement_height = section.settings.announcement_height
+  case announcement_height
+    when 'small'
+      assign announcement_height = 'py-2'
+    when 'normal'
+      assign announcement_height = 'py-3'
+    when 'large'
+      assign announcement_height = 'py-4'
+  endcase
+-%}
+<style>
+  .no-js-splide.splide{
+    visibility: visible;
+  }
+  .announcement-wrapper .splide__arrow{
+    background:transparent;
+    box-shadow: none;
+  }
+  .announcement-wrapper .splide__arrow--prev{
+    left: -2rem;
+  }
+  .announcement-wrapper .splide__arrow--next{
+    right: -2rem;
+  }
+  .announcement-item svg{
+    fill:currentColor;
+  }
+</style>
+<div class="announcement-wrapper section-bg overflow-hidden {% if section.settings.show_border %} border-solid border-b{% endif %} scroll-trigger animate--fade-in"  {% render 'section-properties' %}>
+  <div class="{{ announcement_width }} mx-auto padding-x">
+    {%- if section.blocks.size == 1 -%}
+      <div
+        class="announcement-bar announcement-bar__single {{ announcement_height }}"
+        role="region"
+        aria-label="{{ 'sections.header.announcement' | t }}"
+      >
+        {%- if section.blocks.first.settings.text != blank -%}
+          <p class="flex items-center gap-x-4 justify-center announcement-item text-center">
+            
+            {%- if section.blocks.first.settings.link != blank -%}
+              <a
+                href="{{ section.blocks.first.settings.link }}"
+                class="inline-flex items-center gap-x-4 justify-center text-center"
+              >
+            {%- endif -%}
+              {% render 'icon-svg', icon: section.blocks.first.settings.icon %}
+              <span>{{ section.blocks.first.settings.text | escape }}</span>
+            {%- if section.blocks.first.settings.link != blank -%}
+            </a>
+            {%- endif -%}
+          </p>
+        {%- endif -%}
+      </div>
+    {%- elsif section.blocks.size > 1 -%}
+      <splide-carousel>
+        <div
+          class="no-js-splide splide-slider splide text-center announcement-bar__slide block  {{ announcement_height }}"
+          data-splide='{"type": "{{ section.settings.animation_slides }}", "perPage": 1, "rewind": true, "pagination":false, "arrows": {{ section.settings.show_arrows }}, "autoplay": {{ section.settings.auto_rotate }}, "interval": {{ section.settings.change_slides_speed | append:'000' }}, "pauseOnHover": true, "pauseOnFocus": true}'
+        > <div class="splide__track">
+            <div class="splide__list">
+                {%- for block in section.blocks -%}
+                    <div class="announcement-item w-full splide__slide" data-splide-index="{{ forloop.index0 }}" {{ block.shopify_attributes }} >
+                      {%- if block.settings.text != blank -%}
+                        <p class="flex items-center gap-x-4 justify-center">
+                          {%- if block.settings.link != blank -%}
+                            <a
+                              href="{{ block.settings.link }}"
+                              class="inline-flex items-center gap-x-4 justify-center"
+                            >
+                          {%- endif -%}
+                          {% render 'icon-svg', icon: block.settings.icon %}
+                          <span>{{ block.settings.text | escape }}</span>
+                            {%- if block.settings.link != blank -%}
+                            </a>
+                          {%- endif -%}
+                        </p>
+                      {%- endif -%}
+                    </div>
+                {%- endfor -%}
+            </div>
+          </div>
+          {%- if  section.settings.show_arrows -%}
+            <div class="splide__arrows splide__arrows--ltr ">
+              <button
+                class="splide__arrow splide__arrow--prev"
+                type="button"
+                aria-label="Previous slide"
+                aria-controls="splide01-track"
+              >
+              {% render 'icon-arrow-right' %}
+              </button>
+              <button
+                class="splide__arrow splide__arrow--next"
+                type="button"
+                aria-label="Next slide"
+                aria-controls="splide01-track"
+              >
+              {% render 'icon-arrow-right' %}
+              </button>
+            </div>
+          {%- endif -%}   
+        </div>
+      </splide-carousel>
+    {%- endif -%}
+  </div>
+</div>
+<script>
+  const announcementBarHeight = document.querySelector('.announcement-bar-section').clientHeight;
+  document.documentElement.style.setProperty('--announcement-bar-height', `${announcementBarHeight}px`);
+</script>
+
+{% schema %}
+{
+  "name": "Announcement bar",
+  "max_blocks": 5,
+  "class": "announcement-bar-section",
+  "enabled_on": {
+    "groups": ["header"]
+  },
+  "settings": [
+    {
+      "type": "select",
+      "id": "announcement_width",
+      "label": "Announcement width",
+      "options": [
+        {
+        "value": "small",
+        "label": "Small"
+        },
+        {
+          "value": "normal",
+          "label": "Normal"
+        },
+        {
+          "value": "large",
+          "label": "Large"
+        },
+        {
+          "value": "stretched",
+          "label": "Stretched"
+        },
+        {
+          "value": "full_width",
+          "label": "Full width"
+        }
+      ],
+      "default": "normal"
+    },
+    {
+      "type": "select",
+      "id": "announcement_height",
+      "label": "Announcement height",
+      "options": [
+        {
+        "value": "small",
+        "label": "Small"
+        },
+        {
+          "value": "normal",
+          "label": "Normal"
+        },
+        {
+          "value": "large",
+          "label": "Large"
+        }
+      ],
+      "default": "normal"
+    },
+    {
+      "type": "checkbox",
+      "id": "show_border",
+      "label": "Show border",
+      "default": false
+    },
+    {
+      "type": "header",
+      "content": "Carousel settings",
+      "info": "Applies when more than one announcement message"
+    },
+    {
+      "type": "checkbox",
+      "id": "show_arrows",
+      "label": "Show arrows",
+      "default": false
+    },
+    {
+      "type": "checkbox",
+      "id": "auto_rotate",
+      "label": "Auto-rotate announcements",
+      "default": false
+    },
+    {
+      "type": "range",
+      "id": "change_slides_speed",
+      "min": 3,
+      "max": 10,
+      "step": 1,
+      "unit": "s",
+      "label": "Autoplay speed",
+      "default": 5
+    },
+    {
+      "type": "select",
+      "id": "animation_slides",
+      "label": "Animation type",
+      "options": [
+        {
+        "value": "slide",
+        "label": "Slide"
+        },
+        {
+          "value": "fade",
+          "label": "Fade"
+        },
+        {
+          "value": "loop",
+          "label": "Slide loop"
+        }
+      ],
+      "default": "slide"
+    },
+    {
+      "type": "header",
+      "content": "Colors"
+    },
+    {
+      "type": "color",
+      "id": "bg_color",
+      "label": "Background"
+    },
+    {
+      "type": "color",
+      "id": "text_color",
+      "label": "Text"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "announcement",
+      "name": "Announcement",
+      "settings": [
+        {
+          "type": "text",
+          "id": "text",
+          "default": "Welcome to our store",
+          "label": "Text"
+        },
+        {
+          "type": "select",
+          "id": "icon",
+          "options": [
+            {
+              "value": "none",
+              "label": "None"
+            },
+            {
+              "value": "award",
+              "label": "Award"
+            },
+            {
+              "value": "apple",
+              "label": "Apple"
+            },
+            {
+              "value": "banana",
+              "label": "Banana"
+            },
+            {
+              "value": "bottle",
+              "label": "Bottle"
+            },
+            {
+              "value": "box",
+              "label": "Box"
+            },
+            {
+              "value": "carrot",
+              "label": "Carrot"
+            },
+            {
+              "value": "chat_bubble",
+              "label": "Chat bubble"
+            },
+            {
+              "value": "credit_card",
+              "label": "Credit card"
+            },
+            {
+              "value": "check_mark",
+              "label": "Check mark"
+            },
+            {
+              "value": "check_circle",
+              "label": "Check circle"
+            },
+            {
+              "value": "clipboard",
+              "label": "Clipboard"
+            },
+            {
+              "value": "dairy",
+              "label": "Dairy"
+            },
+            {
+              "value": "dairy_free",
+              "label": "Dairy free"
+            },
+            {
+              "value": "dryer",
+              "label": "Dryer"
+            },
+            {
+              "value": "eye",
+              "label": "Eye"
+            },
+            {
+              "value": "fire",
+              "label": "Fire"
+            },
+            {
+              "value": "gluten_free",
+              "label": "Gluten free"
+            },
+            {
+              "value": "gift",
+              "label": "Gift"
+            },
+            {
+              "value": "global",
+              "label": "Global"
+            },
+            {
+              "value": "heart",
+              "label": "Heart"
+            },
+            {
+              "value": "iron",
+              "label": "Iron"
+            },
+            {
+              "value": "leaf",
+              "label": "Leaf"
+            },
+            {
+              "value": "leather",
+              "label": "Leather"
+            },
+            {
+              "value": "lightning_bolt",
+              "label": "Lightning bolt"
+            },
+            {
+              "value": "lipstick",
+              "label": "Lipstick"
+            },
+            {
+              "value": "lock",
+              "label": "Lock"
+            },
+            {
+              "value": "map_pin",
+              "label": "Map pin"
+            },
+            {
+              "value": "nut_free",
+              "label": "Nut free"
+            },
+            {
+              "value": "pants",
+              "label": "Pants"
+            },
+            {
+              "value": "paw_print",
+              "label": "Paw print"
+            },
+            {
+              "value": "pepper",
+              "label": "Pepper"
+            },
+            {
+              "value": "perfume",
+              "label": "Perfume"
+            },
+            {
+              "value": "plane",
+              "label": "Plane"
+            },
+            {
+              "value": "plant",
+              "label": "Plant"
+            },
+            {
+              "value": "price_tag",
+              "label": "Price tag"
+            },
+            {
+              "value": "question_mark",
+              "label": "Question mark"
+            },
+            {
+              "value": "recycle",
+              "label": "Recycle"
+            },
+            {
+              "value": "return",
+              "label": "Return"
+            },
+            {
+              "value": "ruler",
+              "label": "Ruler"
+            },
+            {
+              "value": "serving_dish",
+              "label": "Serving dish"
+            },
+            {
+              "value": "shirt",
+              "label": "Shirt"
+            },
+            {
+              "value": "shoe",
+              "label": "Shoe"
+            },
+            {
+              "value": "silhouette",
+              "label": "Silhouette"
+            },
+            {
+              "value": "snowflake",
+              "label": "Snowflake"
+            },
+            {
+              "value": "star",
+              "label": "Star"
+            },
+            {
+              "value": "stopwatch",
+              "label": "Stopwatch"
+            },
+            {
+              "value": "sheild",
+              "label": "Sheild"
+            },
+            {
+              "value": "truck",
+              "label": "Truck"
+            },
+            {
+              "value": "trophy",
+              "label": "Trophy"
+            },
+            {
+              "value": "washing",
+              "label": "Washing"
+            },
+            {
+              "value": "wallet",
+              "label": "Wallet"
+            }
+          ],
+          "default": "none",
+          "label": "Icon"
+        },
+        {
+          "type": "url",
+          "id": "link",
+          "label": "Link"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Announcement bar",
+      "blocks": [
+        {
+          "type": "announcement"
+        }
+      ]
+    }
+  ]
+}
+{% endschema %}

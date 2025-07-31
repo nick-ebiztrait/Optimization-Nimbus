@@ -1,0 +1,381 @@
+{{ 'before-after-image.css' | asset_url | stylesheet_tag }}
+{%- liquid
+  assign desktop_height = section.settings.desktop_height
+  assign mobile_height = section.settings.mobile_height
+	assign image_placement = section.settings.image_placement
+-%}
+{%- capture widths_mobile -%}200,300,400,500,600,700,800,900,1000,1200{%- endcapture -%}
+{%- capture widths -%}200,300,400,500,600,700,800,900,1000,1200,1400,1600,1800,2000,2200,2400,2600,2800,3000,3200{%- endcapture -%}
+{%- capture sizes -%}
+  {%- if image_placement == 'bottom' -%}
+    (min-width: {{ settings.page_width }}px) {{ settings.page_width | minus: 48 }}px,(min-width: 750px) calc((100vw - 130px)), 100vw
+  {%- else -%}
+    (min-width: {{ settings.page_width }}px) {{ settings.page_width | minus: 48 |  divided_by: 2 }}px, calc(100vw - 3rem)
+  {%- endif -%}
+
+{%- endcapture -%}
+<div class="isolate section-before-after section-padding section-bg" {% render 'section-properties' %}>
+	<div class="{{ section.settings.section_width }}">
+		<div class="before-after-wrap {% if image_placement != 'bottom' %} grid md:grid-cols-2 gap-x-20 {% endif %}">
+			{%- if image_placement != 'bottom' -%}
+				<div class="flex items-center {% if section.settings.layout == 'vertical' %} justify-center {% endif %}">
+			{%- endif -%}
+				{% render 'section-header', layout_header: section.settings.layout, subheading: section.settings.subheading, heading: section.settings.heading, description: section.settings.description, class:"header-before-after",  heading_size: section.settings.heading_size_section, heading_tag: section.settings.heading_tag %}
+			{%- if image_placement != 'bottom' -%}
+				</div>
+			{%- endif -%}
+			<before-after-image class="{% if image_placement == 'left' %} md:-order-1{% endif %}">
+				<div class="before-after-container global-radius" style="{% if request.visual_preview_mode %} --slider-position: 50%;--clip-path-percent: 50%;  {% else %} --slider-position: 0%;--clip-path-percent: 0%;  {% endif %}">
+					{% for block in section.blocks %}
+						{% liquid
+							assign image = block.settings.image
+							assign mobile_image = block.settings.mobile_image
+						%}
+						{%- capture ratio -%}
+							{%- if forloop.index == 1 -%}
+								{%- if image != blank -%}
+									--aspect-ratio:{{ image.aspect_ratio }}; 
+                  {%- if mobile_image != blank -%}
+                    --aspect-ratio-mobile : {{ mobile_image.aspect_ratio }};
+                  {%- else -%}
+                    --aspect-ratio-mobile : {{ image.aspect_ratio }};
+                  {%- endif -%}
+								{%- else -%}
+									--aspect-ratio:16/9; --aspect-ratio-mobile : 16/9;
+								{%- endif -%}
+							{%- endif -%}
+						{%- endcapture -%}
+						<div class="before-after-image  {% if forloop.index == 2 %} after {% else  %} before {{ desktop_height }} {{ mobile_height }} {% endif %}"
+						style="{{ ratio }}" {{ block.shopify_attributes }}>
+							{%- if block.settings.label_text != blank -%}
+								<span class="before-after-image__badge absolute top-8  text-size-small py-2 px-6 {% if forloop.index == 1 %} left-8 {% else  %} right-8 {% endif %}">
+								{{- block.settings.label_text -}}
+								</span>
+							{%- endif -%}
+
+							{%- if image != blank -%}
+								<picture class="block w-full h-full">
+									{%- if block.settings.mobile_image != blank -%}
+										<source media="(max-width: 767px)" srcset="{%  render 'image-srcset', image: mobile_image, widths: widths_mobile %}" />
+									{%- endif -%}
+									{{- image | image_url: width: image.width | image_tag: sizes: sizes, widths: widths -}}
+								</picture>
+							{%- else -%}
+								{%- assign index = forloop.index | modulo: 2 | plus: 1 -%}
+								<div class="hero-placeholder-svg">
+									{{ 'lifestyle-' | append: index | placeholder_svg_tag: 'placeholder_svg' }}
+									</div>
+							{%- endif -%}
+							
+						</div>
+					{% endfor %}
+					<div class="slider">
+							<div class="slider-button inline-flex items-center justify-center">
+								<svg class="size-8" aria-hidden="true" focusable="false" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M11.9668 18.8193V5.11517"></path><path d="M6.98438 18.8193L6.98438 5.11517"></path><path d="M16.9492 18.8193V5.11517"></path></svg>
+							</div>
+					</div>
+				</div>
+			</before-after-image>
+		</div>
+	</div>
+</div>
+<script src="{{ 'before-after-image.js' | asset_url }}" defer="defer"></script>
+{% schema %}
+  {
+  "name": "Before/after image",
+  "class": "section",
+  "tag": "section",
+  "max_blocks": 2,
+  "disabled_on": {
+      "groups": ["header", "footer", "aside"]
+    },
+  "settings": [
+    {
+      "type": "select",
+      "id": "section_width",
+      "label": "Width",
+      "options": [
+        {
+          "value": "container",
+          "label": "Container"
+        },
+        {
+          "value": "container-fluid",
+          "label": "Stretched"
+        },
+        {
+          "value": "w-full",
+          "label": "Full width"
+        }
+      ],
+      "default": "container"
+    },
+    {
+      "type": "header",
+      "content": "Section header"
+    },
+    {
+      "type": "text",
+      "id": "subheading",
+      "label": "Subheading",
+      "default": "Sub heading"
+    },
+    {
+      "type": "text",
+      "id": "heading",
+      "default": "Before/after image slider",
+      "label": "Heading"
+    },
+    {
+      "type": "select",
+      "id": "heading_tag",
+      "label": "Heading tag",
+      "options": [
+          {
+              "value": "h1",
+              "label": "H1"
+          },
+          {
+              "value": "h2",
+              "label": "H2"
+          },
+          {
+              "value": "h3",
+              "label": "H3"
+          },
+          {
+              "value": "h4",
+              "label": "H4"
+          },
+          {
+              "value": "h5",
+              "label": "H5"
+          },
+          {
+              "value": "h6",
+              "label": "H6"
+          },
+          {
+              "value": "p",
+              "label": "Paragraph"
+          },
+          {
+              "value": "div",
+              "label": "Div"
+          }
+      ],
+      "default": "h2"
+    },
+    {
+      "type": "select",
+      "id": "heading_size_section",
+      "label": "Heading size",
+      "options": [
+          {
+              "value": "h1",
+              "label": "Heading 1"
+          },
+          {
+              "value": "h2",
+              "label": "Heading 2"
+          },
+          {
+              "value": "h3",
+              "label": "Heading 3"
+          },
+          {
+              "value": "h4",
+              "label": "Heading 4"
+          },
+          {
+              "value": "h5",
+              "label": "Heading 5"
+          },
+          {
+              "value": "h6",
+              "label": "Heading 6"
+          }
+      ],
+      "default": "h2"
+    },
+    {
+      "type": "richtext",
+      "id": "description",
+      "label": "Description",
+      "default": "<p>Add a short description for this section</p>"
+    },
+    {
+      "type": "select",
+      "id": "layout",
+      "label": "Layout",
+      "options": [
+        {
+          "value": "horizontal",
+          "label": "Horizontal"
+        },
+        {
+          "value": "vertical",
+          "label": "Vertical"
+        }
+      ],
+      "default": "vertical"
+    },
+    {
+      "type": "header",
+      "content": "Settings"
+    },
+    {
+      "type": "select",
+      "id": "image_placement",
+      "label": "Image placement",
+      "options": [
+        {
+          "value": "left",
+          "label": "Left"
+        },
+        {
+          "value": "right",
+          "label": "Right"
+        },
+        {
+          "value": "bottom",
+          "label": "Bottom"
+        }
+      ],
+      "default": "bottom"
+    },
+    {
+      "type": "select",
+      "id": "desktop_height",
+      "label": "Desktop height",
+      "options": [
+        {
+          "value": "desktop-height-image",
+          "label": "Adapt to image"
+        },
+        {
+          "value": "desktop-height-450",
+          "label": "450px"
+        },
+        {
+          "value": "desktop-height-550",
+          "label": "550px"
+        },
+        {
+          "value": "desktop-height-650",
+          "label": "650px"
+        },
+        {
+          "value": "desktop-height-750",
+          "label": "750px"
+        }
+      ],
+      "default": "desktop-height-650"
+    },
+    {
+      "type": "select",
+      "id": "mobile_height",
+      "label": "Mobile height",
+      "options": [
+        {
+          "value": "mobile-height-image",
+          "label": "Adapt to image"
+        },
+        {
+          "value": "mobile-height-400",
+          "label": "400px"
+        },
+        {
+          "value": "mobile-height-450",
+          "label": "450px"
+        },
+        {
+          "value": "mobile-height-500",
+          "label": "500px"
+        },
+        {
+          "value": "mobile-height-550",
+          "label": "550px"
+        }
+      ],
+      "default": "mobile-height-500"
+    },
+    {
+      "type": "header",
+      "content": "Colors"
+    },
+    {
+      "type": "color",
+      "id": "bg_color",
+      "label": "Background"
+    },
+    {
+      "type": "color",
+      "id": "text_color",
+      "label": "Text"
+    },
+    {
+      "type": "header",
+      "content": "Section padding"
+    },
+    {
+      "type": "range",
+      "id": "padding_top",
+      "min": 0,
+      "max": 100,
+      "step": 4,
+      "unit": "px",
+      "label": "Top padding",
+      "default": 36
+    },
+    {
+      "type": "range",
+      "id": "padding_bottom",
+      "min": 0,
+      "max": 100,
+      "step": 4,
+      "unit": "px",
+      "label": "Bottom padding",
+      "default": 36
+    }
+  ],
+  "blocks": [
+    {
+      "type": "image",
+      "name": "Image",
+      "settings": [
+        {
+          "type": "image_picker",
+          "id": "image",
+          "label": "Image",
+          "info": "1340 x 650 .jpg recommended"
+        },
+        {
+          "type": "image_picker",
+          "id": "mobile_image",
+          "label": "Mobile image"
+        },
+        {
+          "type": "text",
+          "id": "label_text",
+          "label": "Label text",
+          "default": "Column"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Before/after image",
+      "blocks": [
+        {
+          "type": "image"
+        },
+        {
+          "type": "image"
+        }
+      ]
+    }
+  ]
+}
+{% endschema %}
