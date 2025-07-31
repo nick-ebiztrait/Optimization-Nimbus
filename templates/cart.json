@@ -1,0 +1,111 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "breadcrumbs_jGkqQn": {
+      "type": "breadcrumbs",
+      "settings": {
+        "section_width": "container-fluid",
+        "bg_color": "",
+        "text_color": "",
+        "padding_top": 12,
+        "padding_bottom": 12
+      }
+    },
+    "cart-items": {
+      "type": "main-cart-items",
+      "settings": {
+        "bg_color": "",
+        "text_color": "",
+        "padding_top": 60,
+        "padding_bottom": 0
+      }
+    },
+    "cart-footer": {
+      "type": "main-cart-footer",
+      "blocks": {
+        "subtotal": {
+          "type": "subtotal",
+          "settings": {}
+        },
+        "buttons": {
+          "type": "buttons",
+          "settings": {}
+        }
+      },
+      "block_order": [
+        "subtotal",
+        "buttons"
+      ],
+      "settings": {
+        "show_accept": true,
+        "bg_color": "",
+        "text_color": "",
+        "padding_top": 20,
+        "padding_bottom": 40
+      }
+    },
+    "divider_qHgCLE": {
+      "type": "divider",
+      "settings": {
+        "section_width": "container",
+        "spacer_mobile": 24,
+        "spacer_desktop": 24,
+        "show_border": true,
+        "bg_color": "",
+        "color": "",
+        "style": "solid",
+        "thickness": 1
+      }
+    },
+    "related-products": {
+      "type": "related-products",
+      "settings": {
+        "section_width": "container",
+        "subheading": "",
+        "heading": "You may also like",
+        "description": "",
+        "enable_stack_products": false,
+        "show_progress_bar": true,
+        "products_to_show": 10,
+        "columns_desktop": 4,
+        "columns_mobile": "2",
+        "bg_color": "",
+        "text_color": "",
+        "padding_top": 32,
+        "padding_bottom": 40
+      }
+    },
+    "recently_viewed_products_inX6qE": {
+      "type": "recently-viewed-products",
+      "settings": {
+        "section_width": "container",
+        "subheading": "",
+        "heading": "Recently viewed products",
+        "description": "",
+        "products_limit": 4,
+        "columns_desktop": 4,
+        "columns_mobile": "2",
+        "bg_color": "",
+        "text_color": "",
+        "padding_top": 36,
+        "padding_bottom": 68
+      }
+    }
+  },
+  "order": [
+    "breadcrumbs_jGkqQn",
+    "cart-items",
+    "cart-footer",
+    "divider_qHgCLE",
+    "related-products",
+    "recently_viewed_products_inX6qE"
+  ]
+}

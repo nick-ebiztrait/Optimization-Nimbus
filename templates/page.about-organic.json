@@ -1,0 +1,707 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {
+        "section_width": "container-narrow",
+        "show_default_heading": true,
+        "bg_color": "",
+        "text_color": "",
+        "padding_top": 60,
+        "padding_bottom": 60
+      }
+    },
+    "breadcrumbs_nRtgHT": {
+      "type": "breadcrumbs",
+      "settings": {
+        "section_width": "container-fluid",
+        "alignment": "center",
+        "text_size": "text-size-small",
+        "bg_color": "#f6f6f6",
+        "text_color": "",
+        "padding_top": 12,
+        "padding_bottom": 12
+      }
+    },
+    "image_with_text_overlay_44twEq": {
+      "type": "image-with-text-overlay",
+      "blocks": {
+        "subheading_rkkGE7": {
+          "type": "subheading",
+          "settings": {
+            "subheading": "About us"
+          }
+        },
+        "heading_8LCFUG": {
+          "type": "heading",
+          "settings": {
+            "heading": "Own Your Individual Beauty",
+            "heading_size": "h0"
+          }
+        },
+        "text_LtB8Va": {
+          "type": "text",
+          "settings": {
+            "text": "<p>You are not a collection of flaws to be fixed. What makes you different is what makes you powerful and strong. At the heart of Om is an appreciation for who we are as individuals and the unique gifts we each bring to the world.</p>",
+            "large_text": false
+          }
+        }
+      },
+      "block_order": [
+        "subheading_rkkGE7",
+        "heading_8LCFUG",
+        "text_LtB8Va"
+      ],
+      "settings": {
+        "section_width": "w-full",
+        "image": "shopify://shop_images/design-01jfwthh16-1735062790.jpg",
+        "link": "",
+        "desktop_height": "desktop-height-750",
+        "mobile_height": "mobile-height-500",
+        "desktop_content_position": "middle-center",
+        "mobile_content_position": "middle-center",
+        "content_alignment": "center",
+        "mobile_content_alignment": "center",
+        "content_width": "max-w-4xl",
+        "enable_parallax": false,
+        "color_text": "#ffffff",
+        "overlay_color": "#000000",
+        "overlay_opacity": 70,
+        "overlay_gradient": "linear-gradient(180deg, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.2) 90%)"
+      }
+    },
+    "custom_content_enCpHw": {
+      "type": "custom-content",
+      "blocks": {
+        "text_gPg87X": {
+          "type": "text",
+          "settings": {
+            "block_width": "33",
+            "subheading": "Easy and simple",
+            "heading": "Take a 👄 Look at Our Profile 💅",
+            "heading_size": "h1",
+            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>",
+            "vertical_alignment": "center",
+            "text_alignment": "start",
+            "button_label": "Get a Quote",
+            "button_link": "",
+            "button_type": "primary",
+            "show_icon": false,
+            "bg_color": "",
+            "text_color": "",
+            "padding_top": 0,
+            "padding_bottom": 0,
+            "padding_left": 0,
+            "padding_right": 100,
+            "padding_top_mobile": 0,
+            "padding_bottom_mobile": 0,
+            "padding_left_mobile": 0,
+            "padding_right_mobile": 0
+          }
+        },
+        "image_X6dNME": {
+          "type": "image",
+          "settings": {
+            "block_width": "33",
+            "image": "shopify://shop_images/design-01jg3pwb8a-1735322904.jpg",
+            "image_size": "portrait",
+            "link": "",
+            "vertical_alignment": "center"
+          }
+        },
+        "text_k7VtiE": {
+          "type": "text",
+          "settings": {
+            "block_width": "33",
+            "subheading": "",
+            "heading": "",
+            "heading_size": "h2",
+            "text": "<h5>Our Apothecary</h5><p>By bringing our formulas to life in small batches, we ensure the highest level of quality and care goes into every product. </p><h5>Classical & Easy Customize</h5><p>We think principles look good on everyone. Learn more about what we’re doing to live our values.</p>",
+            "vertical_alignment": "center",
+            "text_alignment": "start",
+            "button_label": "",
+            "button_link": "",
+            "button_type": "primary",
+            "show_icon": false,
+            "bg_color": "#e4f0e7",
+            "text_color": "",
+            "padding_top": 48,
+            "padding_bottom": 48,
+            "padding_left": 48,
+            "padding_right": 48,
+            "padding_top_mobile": 24,
+            "padding_bottom_mobile": 24,
+            "padding_left_mobile": 24,
+            "padding_right_mobile": 24
+          }
+        }
+      },
+      "block_order": [
+        "text_gPg87X",
+        "image_X6dNME",
+        "text_k7VtiE"
+      ],
+      "settings": {
+        "section_width": "container",
+        "subheading": "",
+        "heading": "",
+        "heading_size_section": "h2",
+        "description": "",
+        "layout": "vertical",
+        "column_gap": "24",
+        "row_gap": "24",
+        "bg_color": "",
+        "text_color": "",
+        "padding_top": 100,
+        "padding_bottom": 100
+      }
+    },
+    "layer_image_with_text_mJ3bVT": {
+      "type": "layer-image-with-text",
+      "blocks": {
+        "image_fqKCrj": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/pexels-ira-kamish-12008270.jpg",
+            "width_image": 188,
+            "image_size": "square",
+            "offset_config": 200,
+            "top_position": 30,
+            "left_position": 4,
+            "top_position_mobile": 20,
+            "left_position_mobile": -26
+          }
+        },
+        "image_h3WVyE": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/design-01jgje0818-1735786404-4.jpg",
+            "width_image": 252,
+            "image_size": "adapt",
+            "offset_config": 250,
+            "top_position": 74,
+            "left_position": -8,
+            "top_position_mobile": 80,
+            "left_position_mobile": -38
+          }
+        },
+        "image_g4Ajmy": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/design-01jgb92824-1735545627-2.jpg",
+            "width_image": 200,
+            "image_size": "adapt",
+            "offset_config": 300,
+            "top_position": 64,
+            "left_position": 94,
+            "top_position_mobile": 64,
+            "left_position_mobile": 84
+          }
+        },
+        "image_7fy9E3": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/design-01jed89cvk-1733714745-3.jpg",
+            "width_image": 300,
+            "image_size": "adapt",
+            "offset_config": 200,
+            "top_position": 100,
+            "left_position": 70,
+            "top_position_mobile": 100,
+            "left_position_mobile": 68
+          }
+        },
+        "image_yHrKw9": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/design-01jgaypses-1735535267-3.jpg",
+            "width_image": 140,
+            "image_size": "adapt",
+            "offset_config": -1000,
+            "top_position": -40,
+            "left_position": 74,
+            "top_position_mobile": -16,
+            "left_position_mobile": 68
+          }
+        }
+      },
+      "block_order": [
+        "image_fqKCrj",
+        "image_h3WVyE",
+        "image_g4Ajmy",
+        "image_7fy9E3",
+        "image_yHrKw9"
+      ],
+      "settings": {
+        "content_alignment": "center",
+        "content_width": "max-w-5xl",
+        "subheading": "Glowy Routine",
+        "heading": "💯 Percent Follow the National Eczema Association Seal of Acceptance Guidelines",
+        "heading_size": "h1",
+        "text": "",
+        "button_label": "Shop makeup",
+        "button_link": "",
+        "button_type": "primary",
+        "show_icon": false,
+        "type_animation": "parallax",
+        "bg_color": "#f8ede7",
+        "text_color": ""
+      }
+    },
+    "multicolumn_cJcm9e": {
+      "type": "multicolumn",
+      "blocks": {
+        "column_j8cRGP": {
+          "type": "column",
+          "settings": {
+            "link": "",
+            "title": "400K+",
+            "text": "<p>Sales on First Month</p>",
+            "button_label": "",
+            "button_link": "",
+            "button_type": "outline",
+            "show_icon": false
+          }
+        },
+        "column_47b9Gx": {
+          "type": "column",
+          "settings": {
+            "link": "",
+            "title": "1 MILLION +",
+            "text": "<p>Web Pages Created by Users</p>",
+            "button_label": "",
+            "button_link": "",
+            "button_type": "outline",
+            "show_icon": false
+          }
+        },
+        "column_QM4Mzh": {
+          "type": "column",
+          "settings": {
+            "link": "",
+            "title": "500 K +",
+            "text": "<p>Customers Served Around The World</p>",
+            "button_label": "",
+            "button_link": "",
+            "button_type": "outline",
+            "show_icon": false
+          }
+        }
+      },
+      "block_order": [
+        "column_j8cRGP",
+        "column_47b9Gx",
+        "column_QM4Mzh"
+      ],
+      "settings": {
+        "section_width": "container",
+        "subheading": "",
+        "heading": "",
+        "heading_size_section": "h2",
+        "description": "",
+        "layout": "vertical",
+        "image_width": "full",
+        "image_ratio": "adapt",
+        "heading_size": "h0",
+        "column_alignment": "center",
+        "link_url": "",
+        "link_text": "",
+        "button_type": "primary",
+        "show_icon": false,
+        "enable_stack_columns": false,
+        "show_progress_bar": false,
+        "enable_overflow_visible": false,
+        "columns_desktop": 3,
+        "column_gap": 3,
+        "column_gap_mobile": 3,
+        "columns_mobile": "1",
+        "swipe_on_mobile": false,
+        "bg_color": "",
+        "text_color": "",
+        "padding_top": 100,
+        "padding_bottom": 80
+      }
+    },
+    "divider_34bKD8": {
+      "type": "divider",
+      "settings": {
+        "section_width": "container",
+        "spacer_mobile": 2,
+        "spacer_desktop": 2,
+        "show_border": true,
+        "bg_color": "",
+        "color": "#ff5b00",
+        "style": "dashed",
+        "thickness": 1
+      }
+    },
+    "image_with_text_ByPcXj": {
+      "type": "image-with-text",
+      "blocks": {
+        "subheading_pgUibc": {
+          "type": "subheading",
+          "settings": {
+            "subheading": "PURPOSE"
+          }
+        },
+        "heading_zfVLim": {
+          "type": "heading",
+          "settings": {
+            "heading": "Better for Everyone",
+            "heading_size": "h0"
+          }
+        },
+        "text_8M7X98": {
+          "type": "text",
+          "settings": {
+            "text": "<p>We believe that premium products don’t have to come with a premium price tag. We keep our plant-based, totally clean formulas affordable so we can reach more people and make a bigger difference.</p>",
+            "large_text": false
+          }
+        },
+        "separator_8npW7b": {
+          "type": "separator",
+          "settings": {
+            "show_border": false,
+            "space": 6
+          }
+        },
+        "button_TakerM": {
+          "type": "button",
+          "settings": {
+            "button_label": "Explore our products",
+            "button_link": "",
+            "button_type": "primary",
+            "show_icon": false
+          }
+        }
+      },
+      "block_order": [
+        "subheading_pgUibc",
+        "heading_zfVLim",
+        "text_8M7X98",
+        "separator_8npW7b",
+        "button_TakerM"
+      ],
+      "settings": {
+        "section_width": "container",
+        "media_size": "square",
+        "show_image_2": false,
+        "position_image_2": "middle-right",
+        "media_size_2": "adapt",
+        "desktop_image_width": "50",
+        "use_video": true,
+        "video": "https://www.youtube.com/watch?v=_9VUPq3SxOc",
+        "video_autoplay": true,
+        "video_controls": false,
+        "layout": "left",
+        "column_gap": "16",
+        "vertical_alignment": "center",
+        "content_alignment": "start",
+        "bg_color": "",
+        "text_color": "",
+        "bg_column": "",
+        "padding_top": 80,
+        "padding_bottom": 100
+      }
+    },
+    "text_with_icons_6ggFta": {
+      "type": "text-with-icons",
+      "blocks": {
+        "icon_cxd4jB": {
+          "type": "icon",
+          "settings": {
+            "icon": "check_circle",
+            "title": "47,000+ Happy Customer",
+            "text": "<p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>",
+            "button_label": "",
+            "button_link": ""
+          }
+        },
+        "icon_B48wL6": {
+          "type": "icon",
+          "settings": {
+            "icon": "award",
+            "title": "20 Awards Won",
+            "text": "<p>Explore our collection of top-notch products that have garnered over 20 awards for their superior quality and performance.</p>",
+            "button_label": "",
+            "button_link": ""
+          }
+        },
+        "icon_BRYydG": {
+          "type": "icon",
+          "settings": {
+            "icon": "global",
+            "title": "24 Years of Experiences",
+            "text": "<p>With 24 years of experience, we are your go-to source for top-quality products you can rely on. Expertise you can trust.</p>",
+            "button_label": "",
+            "button_link": ""
+          }
+        }
+      },
+      "block_order": [
+        "icon_cxd4jB",
+        "icon_B48wL6",
+        "icon_BRYydG"
+      ],
+      "settings": {
+        "section_width": "container",
+        "subheading": "",
+        "heading": "Why choose us?",
+        "heading_size_section": "h2",
+        "description": "<p>We believe that premium products don’t have to come with a premium price tag.</p>",
+        "layout": "vertical",
+        "item_type": "vertical",
+        "heading_size": "h5",
+        "column_alignment": "center",
+        "icon_background": "circle",
+        "icon_width": 40,
+        "button_type": "outline",
+        "show_icon": false,
+        "columns_mobile": "1",
+        "swipe_on_mobile": false,
+        "show_progress_bar": false,
+        "bg_color": "#f6f6f6",
+        "text_color": "",
+        "icon_bg_color": "#193a43",
+        "icon_color": "#daf4b1",
+        "padding_top": 84,
+        "padding_bottom": 84
+      }
+    },
+    "custom_content_DqyzpC": {
+      "type": "custom-content",
+      "blocks": {
+        "newsletter_CzTx98": {
+          "type": "newsletter",
+          "settings": {
+            "block_width": "33",
+            "vertical_alignment": "center",
+            "text_alignment": "start",
+            "heading": "Subscribe to our emails",
+            "heading_size": "h3",
+            "description": "<p>Stay up to date with our latest offers and products by subscribing to our emails. Don't miss out on exclusive deals!</p>"
+          }
+        },
+        "image_PxVCHJ": {
+          "type": "image",
+          "settings": {
+            "block_width": "66",
+            "image": "shopify://shop_images/design-01jfwt8zmv-1735060250.jpg",
+            "image_size": "wide",
+            "link": "",
+            "vertical_alignment": "center"
+          }
+        }
+      },
+      "block_order": [
+        "newsletter_CzTx98",
+        "image_PxVCHJ"
+      ],
+      "settings": {
+        "section_width": "container",
+        "subheading": "",
+        "heading": "",
+        "heading_size_section": "h2",
+        "description": "",
+        "layout": "vertical",
+        "column_gap": "48",
+        "row_gap": "24",
+        "bg_color": "",
+        "text_color": "",
+        "padding_top": 100,
+        "padding_bottom": 100
+      }
+    },
+    "image_with_text_overlay_YWVBWh": {
+      "type": "image-with-text-overlay",
+      "blocks": {
+        "subheading_BCinPK": {
+          "type": "subheading",
+          "settings": {
+            "subheading": "Meet You At The Beach 😎"
+          }
+        },
+        "separator_3Egpkc": {
+          "type": "separator",
+          "settings": {
+            "show_border": false,
+            "space": 2
+          }
+        },
+        "heading_jVirQM": {
+          "type": "heading",
+          "settings": {
+            "heading": "Our mission is simple: make products that perform for your skin, body and planet.",
+            "heading_size": "h2"
+          }
+        },
+        "separator_Mt8QwJ": {
+          "type": "separator",
+          "settings": {
+            "show_border": false,
+            "space": 5
+          }
+        },
+        "buttons_pimMiG": {
+          "type": "buttons",
+          "settings": {
+            "button_label": "Join our program",
+            "button_link": "#",
+            "button_type": "primary-white",
+            "show_icon": false
+          }
+        }
+      },
+      "block_order": [
+        "subheading_BCinPK",
+        "separator_3Egpkc",
+        "heading_jVirQM",
+        "separator_Mt8QwJ",
+        "buttons_pimMiG"
+      ],
+      "settings": {
+        "section_width": "w-full",
+        "image": "shopify://shop_images/design-01jfwthh16-1735060452.jpg",
+        "link": "",
+        "desktop_height": "desktop-height-650",
+        "mobile_height": "mobile-height-500",
+        "desktop_content_position": "middle-center",
+        "mobile_content_position": "middle-center",
+        "content_alignment": "center",
+        "mobile_content_alignment": "center",
+        "content_width": "max-w-4xl",
+        "enable_parallax": true,
+        "color_text": "#ffffff",
+        "overlay_color": "#000000",
+        "overlay_opacity": 70,
+        "overlay_gradient": "linear-gradient(180deg, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.3) 90%)"
+      }
+    },
+    "media_grid_geDPDU": {
+      "type": "media-grid",
+      "blocks": {
+        "media_BAmQMx": {
+          "type": "media",
+          "settings": {
+            "image": "shopify://shop_images/fleur-kaan-PG6Em2m7Ar4-unsplash.jpg",
+            "use_video": false,
+            "subheading": "BEST PRODUCTS",
+            "heading": "Made with 100% natural and organic ingredients",
+            "heading_size": "h3",
+            "text": "",
+            "button_label": "See collection",
+            "button_link": "shopify://collections",
+            "button_type": "primary-white",
+            "show_icon": false,
+            "column": 2,
+            "row": 2,
+            "desktop_content_position": "bottom-center",
+            "column_mobile": "2",
+            "row_mobile": "1",
+            "bg_color": "#f1f1f1",
+            "bg_gradient": "",
+            "text_color": "#FFFFFF",
+            "overlay_color": "#000000",
+            "overlay_opacity": 0,
+            "overlay_gradient": "linear-gradient(180deg, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.3) 98%)"
+          }
+        },
+        "media_KNG6eG": {
+          "type": "media",
+          "settings": {
+            "image": "shopify://shop_images/curology-7TlWZkpxCb0-unsplash.jpg",
+            "use_video": false,
+            "subheading": "",
+            "heading": "",
+            "heading_size": "h4",
+            "text": "",
+            "button_label": "",
+            "button_link": "",
+            "button_type": "primary-white",
+            "show_icon": false,
+            "column": 2,
+            "row": 1,
+            "desktop_content_position": "middle-center",
+            "column_mobile": "2",
+            "row_mobile": "1",
+            "bg_color": "#f1f1f1",
+            "bg_gradient": "",
+            "text_color": "#000000",
+            "overlay_color": "#000000",
+            "overlay_opacity": 0,
+            "overlay_gradient": ""
+          }
+        },
+        "media_93HNtN": {
+          "type": "media",
+          "settings": {
+            "use_video": false,
+            "subheading": "",
+            "heading": "Featured products",
+            "heading_size": "h4",
+            "text": "",
+            "button_label": "Our collections",
+            "button_link": "",
+            "button_type": "underlined",
+            "show_icon": false,
+            "column": 2,
+            "row": 1,
+            "desktop_content_position": "middle-center",
+            "column_mobile": "2",
+            "row_mobile": "1",
+            "bg_color": "#f1f1f1",
+            "bg_gradient": "",
+            "text_color": "#193a43",
+            "overlay_color": "#000000",
+            "overlay_opacity": 0,
+            "overlay_gradient": "radial-gradient(rgba(231, 255, 0, 1) 3%, rgba(248, 233, 229, 1) 100%)"
+          }
+        }
+      },
+      "block_order": [
+        "media_BAmQMx",
+        "media_KNG6eG",
+        "media_93HNtN"
+      ],
+      "settings": {
+        "section_width": "container",
+        "subheading": "",
+        "heading": "",
+        "heading_size_section": "h2",
+        "description": "",
+        "layout": "vertical",
+        "desktop_row_height": 300,
+        "mobile_row_height": 250,
+        "column_gap": "4",
+        "bg_color": "",
+        "text_color": "",
+        "padding_top": 100,
+        "padding_bottom": 100
+      }
+    }
+  },
+  "order": [
+    "main",
+    "breadcrumbs_nRtgHT",
+    "image_with_text_overlay_44twEq",
+    "custom_content_enCpHw",
+    "layer_image_with_text_mJ3bVT",
+    "multicolumn_cJcm9e",
+    "divider_34bKD8",
+    "image_with_text_ByPcXj",
+    "text_with_icons_6ggFta",
+    "custom_content_DqyzpC",
+    "image_with_text_overlay_YWVBWh",
+    "media_grid_geDPDU"
+  ]
+}

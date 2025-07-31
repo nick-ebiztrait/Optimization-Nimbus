@@ -1,0 +1,863 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "breadcrumbs_ka3wVn": {
+      "type": "breadcrumbs",
+      "settings": {
+        "section_width": "container-fluid",
+        "alignment": "start",
+        "text_size": "text-size-small",
+        "bg_color": "#f5f5f5",
+        "text_color": "",
+        "padding_top": 24,
+        "padding_bottom": 12
+      }
+    },
+    "main": {
+      "type": "main-product",
+      "blocks": {
+        "vendor": {
+          "type": "text",
+          "settings": {
+            "text": "{{ product.vendor }}",
+            "text_style": "subheading"
+          }
+        },
+        "title": {
+          "type": "title",
+          "settings": {
+            "heading_size": "h2"
+          }
+        },
+        "rating_UhVAtV": {
+          "type": "rating",
+          "settings": {
+            "target_to_section": true,
+            "section_id": "#judgeme_product_reviews"
+          }
+        },
+        "price": {
+          "type": "price",
+          "settings": {
+            "show_sale_badge": true,
+            "sale_badge_type": "fixed"
+          }
+        },
+        "description": {
+          "type": "description",
+          "disabled": true,
+          "settings": {}
+        },
+        "rich_text_gJV7TU": {
+          "type": "rich-text",
+          "settings": {
+            "align": "start",
+            "icon": "lightning_bolt",
+            "width": 20,
+            "heading": "",
+            "content": "<p><strong>Use the code IMPACT20 to receive a 20% discount on your order</strong></p>",
+            "background": "#ecefe2",
+            "color": "#156742"
+          }
+        },
+        "fit_guide_tyUDAm": {
+          "type": "fit_guide",
+          "settings": {
+            "heading": "Frame Size",
+            "active_segmment": "3",
+            "left_label": "Small",
+            "middle_label": "True to size",
+            "right_label": "Large"
+          }
+        },
+        "popup_ChfgqK": {
+          "type": "popup",
+          "settings": {
+            "text": "What my size?",
+            "icon": "none",
+            "content": "",
+            "content_liquid": "",
+            "page": "guide"
+          }
+        },
+        "sku_yqmVAY": {
+          "type": "sku",
+          "settings": {
+            "text_style": "subheading"
+          }
+        },
+        "inventory_xyPUV8": {
+          "type": "inventory",
+          "settings": {
+            "inventory_threshold": 9,
+            "inventory_base_quantity": 100,
+            "show_inventory_ping": true,
+            "show_inventory_quantity": true,
+            "show_progress_bar": true
+          }
+        },
+        "siblings_j3h7Cg": {
+          "type": "siblings",
+          "settings": {}
+        },
+        "variant_picker": {
+          "type": "variant_picker",
+          "settings": {
+            "picker_type": "button",
+            "hide_sold_out_variants": false,
+            "color_picker_type": "variant_image",
+            "style": "solid",
+            "option_name": "",
+            "size_chart_page": ""
+          }
+        },
+        "quantity_selector": {
+          "type": "quantity_selector",
+          "settings": {}
+        },
+        "buy_buttons": {
+          "type": "buy_buttons",
+          "settings": {
+            "show_two_columns": false,
+            "show_dynamic_checkout": true,
+            "show_gift_card_recipient": true,
+            "show_pickup_availability": true
+          }
+        },
+        "trust_badge_bcKXnr": {
+          "type": "trust-badge",
+          "settings": {
+            "text": "",
+            "badge_type": "payment-icon",
+            "show_border": false,
+            "align": "start"
+          }
+        },
+        "text_UGxVVA": {
+          "type": "text",
+          "settings": {
+            "text": "This is a demo store. You can buy products like this from <a href=\"https://theiangrown.com\" title=\"https://theiangrown.com\"><em>theiangrown</em></a>",
+            "text_style": "body"
+          }
+        },
+        "separator_BcFrTM": {
+          "type": "separator",
+          "settings": {
+            "show_border": false,
+            "divider_space": 0.5
+          }
+        },
+        "collapsible_tab_6kicUP": {
+          "type": "collapsible_tab",
+          "settings": {
+            "heading": "Lifetime warranty",
+            "heading_size": "h6",
+            "icon": "sheild",
+            "content": "<p>We’re so confident in our sunglasses that we offer a lifetime warranty.</p>",
+            "content_liquid": "",
+            "page": "",
+            "open_by_default": false
+          }
+        },
+        "collapsible_tab_bVRE3V": {
+          "type": "collapsible_tab",
+          "settings": {
+            "heading": "Base Materials",
+            "heading_size": "h6",
+            "icon": "leather",
+            "content": "<p>Using bio-resin as an alternative material reduces environmental impact while maintaining high performance standards.</p>",
+            "content_liquid": "",
+            "page": "",
+            "open_by_default": false
+          }
+        },
+        "collapsible_tab_4UNrkz": {
+          "type": "collapsible_tab",
+          "settings": {
+            "heading": "Shipping & returns",
+            "heading_size": "h6",
+            "icon": "global",
+            "content": "<h5><strong>Shipping</strong></h5><p><strong>The Netherlands and Belgium: </strong>Delivered the next day if you ordered before 20:00!<br/><strong>Rest of Europe: </strong>Dispatched today if you ordered before 20:00, usually arrives within 2-4 days.</p><h5><strong>Returns</strong></h5><p>We offer <strong>14 days </strong>after the arrival of your product to return or exchange it. For all information we recommend checking out the return policy.</p>",
+            "content_liquid": "",
+            "page": "",
+            "open_by_default": false
+          }
+        },
+        "separator_CgCj4T": {
+          "type": "separator",
+          "settings": {
+            "show_border": false,
+            "divider_space": 1
+          }
+        },
+        "complementary_7gy8hM": {
+          "type": "complementary",
+          "settings": {
+            "block_heading": "Pairs well with",
+            "column_width": 60,
+            "product_list_limit": 10,
+            "enable_quick_add": true
+          }
+        },
+        "icon_with_text_6bTTF3": {
+          "type": "icon-with-text",
+          "settings": {
+            "layout": "vertical",
+            "icon_size": 20,
+            "icon_1": "lock",
+            "heading_1": "Safe Payment",
+            "icon_2": "truck",
+            "heading_2": "Free Express Shipping*",
+            "icon_3": "box",
+            "heading_3": "Delivery 2-5 days",
+            "icon_4": "shoe",
+            "heading_4": ""
+          }
+        },
+        "share": {
+          "type": "share",
+          "settings": {
+            "share_label": "Share:"
+          }
+        },
+        "countdown_kiaRLz": {
+          "type": "countdown",
+          "disabled": true,
+          "settings": {
+            "end_time": "2025/12/31 23:59:59",
+            "style": "highlight",
+            "font_family": "heading",
+            "number_size": "h5",
+            "heading": "🔥Hurry up! Offer expires in:"
+          }
+        }
+      },
+      "block_order": [
+        "vendor",
+        "title",
+        "rating_UhVAtV",
+        "price",
+        "description",
+        "rich_text_gJV7TU",
+        "fit_guide_tyUDAm",
+        "popup_ChfgqK",
+        "sku_yqmVAY",
+        "inventory_xyPUV8",
+        "siblings_j3h7Cg",
+        "variant_picker",
+        "quantity_selector",
+        "buy_buttons",
+        "trust_badge_bcKXnr",
+        "text_UGxVVA",
+        "separator_BcFrTM",
+        "collapsible_tab_6kicUP",
+        "collapsible_tab_bVRE3V",
+        "collapsible_tab_4UNrkz",
+        "separator_CgCj4T",
+        "complementary_7gy8hM",
+        "icon_with_text_6bTTF3",
+        "share",
+        "countdown_kiaRLz"
+      ],
+      "settings": {
+        "section_width": "container",
+        "enable_sticky_info": true,
+        "show_sticky_add_to_cart_bar": true,
+        "media_width": 60,
+        "media_aspect_ratio": "adapt",
+        "thumbnail_aspect_ratio": "square",
+        "gallery_layout": "thumbnail",
+        "media_position": "left",
+        "show_lightbox": true,
+        "enable_video_autoplay": true,
+        "enable_video_looping": true,
+        "mobile_thumbnails": "show",
+        "bg_color": "#f5f5f5",
+        "text_color": "rgba(0,0,0,0)",
+        "border_color": "rgba(0,0,0,0)",
+        "padding_top": 24,
+        "padding_bottom": 80
+      }
+    },
+    "information-products": {
+      "type": "information-tabs-products",
+      "blocks": {
+        "description_6CNYAh": {
+          "type": "description",
+          "settings": {
+            "tab_heading": "Description"
+          }
+        },
+        "custom_content_73AKnk": {
+          "type": "custom-content",
+          "settings": {
+            "tab_heading": "Product care",
+            "content": "<p>Warning! Lenses may be inserted only in specified models and pursuant to the following instructions. Failure to comply will adversely affect the optical performance and the lenses may not remain in place, causing interferences with vision.</p>",
+            "page": ""
+          }
+        }
+      },
+      "block_order": [
+        "description_6CNYAh",
+        "custom_content_73AKnk"
+      ],
+      "settings": {
+        "section_width": "container",
+        "enable_uppercase": true,
+        "tabs_font_family": "headings_font",
+        "heading_size": "h6",
+        "align": "start",
+        "bg_color": "",
+        "text_color": "",
+        "padding_top": 60,
+        "padding_bottom": 0
+      }
+    },
+    "divider_xRJ3we": {
+      "type": "divider",
+      "settings": {
+        "section_width": "w-full",
+        "spacer_mobile": 30,
+        "spacer_desktop": 40,
+        "show_border": false,
+        "bg_color": "",
+        "color": "",
+        "style": "solid",
+        "thickness": 1
+      }
+    },
+    "multicolumn_bYMjJX": {
+      "type": "multicolumn",
+      "blocks": {
+        "column_X8ARib": {
+          "type": "column",
+          "settings": {
+            "image": "",
+            "link": "",
+            "title": "Diamond Bridge",
+            "text": "",
+            "button_label": "",
+            "button_link": "",
+            "button_type": "outline",
+            "show_icon": false
+          }
+        },
+        "column_RUacq6": {
+          "type": "column",
+          "settings": {
+            "image": "",
+            "link": "",
+            "title": "Custom Temple Design",
+            "text": "",
+            "button_label": "",
+            "button_link": "",
+            "button_type": "outline",
+            "show_icon": false
+          }
+        },
+        "column_CjpKx8": {
+          "type": "column",
+          "settings": {
+            "image": "",
+            "link": "",
+            "title": "24k Gold Hinge",
+            "text": "",
+            "button_label": "",
+            "button_link": "",
+            "button_type": "outline",
+            "show_icon": false
+          }
+        },
+        "column_AmwwQz": {
+          "type": "column",
+          "settings": {
+            "image": "",
+            "link": "",
+            "title": "Triple Diamond Hinge Accent",
+            "text": "",
+            "button_label": "",
+            "button_link": "",
+            "button_type": "outline",
+            "show_icon": false
+          }
+        }
+      },
+      "block_order": [
+        "column_X8ARib",
+        "column_RUacq6",
+        "column_CjpKx8",
+        "column_AmwwQz"
+      ],
+      "settings": {
+        "section_width": "container",
+        "subheading": "",
+        "heading": "",
+        "heading_size_section": "h2",
+        "description": "",
+        "layout": "vertical",
+        "image_width": "full",
+        "image_ratio": "adapt",
+        "heading_size": "h5",
+        "column_alignment": "left",
+        "link_url": "",
+        "link_text": "",
+        "button_type": "primary",
+        "show_icon": false,
+        "enable_stack_columns": false,
+        "show_progress_bar": true,
+        "enable_overflow_visible": true,
+        "columns_desktop": 2,
+        "column_gap": 1,
+        "column_gap_mobile": 3,
+        "columns_mobile": "2",
+        "swipe_on_mobile": true,
+        "bg_color": "",
+        "text_color": "",
+        "padding_top": 0,
+        "padding_bottom": 92
+      }
+    },
+    "text_with_icons_GWUedT": {
+      "type": "text-with-icons",
+      "blocks": {
+        "icon_gr9VaD": {
+          "type": "icon",
+          "settings": {
+            "icon": "box",
+            "custom_icon": "shopify://shop_images/i1.svg",
+            "title": "",
+            "text": "<p>Blue Light Filter</p>",
+            "button_label": "",
+            "button_link": ""
+          }
+        },
+        "icon_enXGxL": {
+          "type": "icon",
+          "settings": {
+            "icon": "check_mark",
+            "custom_icon": "shopify://shop_images/i2.svg",
+            "title": "",
+            "text": "<p>Reading Enhancement</p>",
+            "button_label": "",
+            "button_link": ""
+          }
+        },
+        "icon_itzMe6": {
+          "type": "icon",
+          "settings": {
+            "icon": "check_mark",
+            "custom_icon": "shopify://shop_images/i3.svg",
+            "title": "",
+            "text": "<p>Anti-Smudge and Water-Resistant</p>",
+            "button_label": "",
+            "button_link": ""
+          }
+        },
+        "icon_9krxnP": {
+          "type": "icon",
+          "settings": {
+            "icon": "check_mark",
+            "custom_icon": "shopify://shop_images/i4.svg",
+            "title": "",
+            "text": "<p>Sharper Vision at Night and Safe Driving</p>",
+            "button_label": "",
+            "button_link": ""
+          }
+        },
+        "icon_ETknKx": {
+          "type": "icon",
+          "settings": {
+            "icon": "check_mark",
+            "custom_icon": "shopify://shop_images/i6.svg",
+            "title": "",
+            "text": "<p>UV Protective</p>",
+            "button_label": "",
+            "button_link": ""
+          }
+        }
+      },
+      "block_order": [
+        "icon_gr9VaD",
+        "icon_enXGxL",
+        "icon_itzMe6",
+        "icon_9krxnP",
+        "icon_ETknKx"
+      ],
+      "settings": {
+        "section_width": "container",
+        "subheading": "",
+        "heading": "",
+        "heading_size_section": "h2",
+        "description": "",
+        "layout": "vertical",
+        "item_type": "vertical",
+        "heading_size": "h5",
+        "column_alignment": "center",
+        "icon_background": "none",
+        "icon_width": 64,
+        "button_type": "outline",
+        "show_icon": false,
+        "columns_mobile": "2",
+        "swipe_on_mobile": false,
+        "show_progress_bar": false,
+        "bg_color": "",
+        "text_color": "",
+        "icon_bg_color": "#f5f5f5",
+        "icon_color": "",
+        "padding_top": 40,
+        "padding_bottom": 40
+      }
+    },
+    "image_with_text_Y3wxrR": {
+      "type": "image-with-text",
+      "blocks": {
+        "subheading_WPcKWF": {
+          "type": "subheading",
+          "settings": {
+            "subheading": "Unmatched Clarity"
+          }
+        },
+        "heading_Bg8CUx": {
+          "type": "heading",
+          "settings": {
+            "heading": "Luxurious Detail",
+            "heading_size": "h1"
+          }
+        },
+        "text_WhicLW": {
+          "type": "text",
+          "settings": {
+            "text": "<ul><li>Custom Theia Grown Diamonds</li><li>Custom Molded Temple Tips</li><li>Polarized Lenses </li><li>Custom Nose Pads</li><li>100% UVA and UVB Lens With Anti-Reflective Coating</li></ul>",
+            "large_text": false
+          }
+        }
+      },
+      "block_order": [
+        "subheading_WPcKWF",
+        "heading_Bg8CUx",
+        "text_WhicLW"
+      ],
+      "settings": {
+        "section_width": "container",
+        "media_size": "landscape",
+        "show_image_2": false,
+        "position_image_2": "middle-right",
+        "media_size_2": "adapt",
+        "desktop_image_width": "50",
+        "use_video": true,
+        "video": "https://www.youtube.com/watch?v=_9VUPq3SxOc",
+        "video_autoplay": true,
+        "video_controls": false,
+        "layout": "left",
+        "column_gap": "16",
+        "vertical_alignment": "center",
+        "content_alignment": "start",
+        "bg_color": "",
+        "text_color": "",
+        "bg_column": "",
+        "padding_top": 80,
+        "padding_bottom": 36
+      }
+    },
+    "image_with_text_WgETz6": {
+      "type": "image-with-text",
+      "blocks": {
+        "subheading_FXgeVg": {
+          "type": "subheading",
+          "settings": {
+            "subheading": "Sophisticated Design"
+          }
+        },
+        "heading_AUgeBB": {
+          "type": "heading",
+          "settings": {
+            "heading": "Certified Lab Diamonds",
+            "heading_size": "h1"
+          }
+        },
+        "text_Mm6QKA": {
+          "type": "text",
+          "settings": {
+            "text": "<ul><li> 1 ct. Total Weight  </li><li>Clarity: VS1 </li><li>Color: DEF </li><li>Cut: Theian Ideal</li></ul>",
+            "large_text": false
+          }
+        },
+        "button_EhhMnB": {
+          "type": "button",
+          "settings": {
+            "button_label": "",
+            "button_link": "",
+            "button_type": "primary",
+            "show_icon": false
+          }
+        }
+      },
+      "block_order": [
+        "subheading_FXgeVg",
+        "heading_AUgeBB",
+        "text_Mm6QKA",
+        "button_EhhMnB"
+      ],
+      "settings": {
+        "section_width": "container",
+        "image": "",
+        "media_size": "landscape",
+        "show_image_2": false,
+        "image_2": "shopify://shop_images/APOLLO_PDP_2.webp",
+        "position_image_2": "bottom-left",
+        "media_size_2": "adapt",
+        "desktop_image_width": "50",
+        "use_video": false,
+        "video": "https://www.youtube.com/watch?v=_9VUPq3SxOc",
+        "video_autoplay": true,
+        "video_controls": false,
+        "layout": "right",
+        "column_gap": "16",
+        "vertical_alignment": "center",
+        "content_alignment": "start",
+        "bg_color": "",
+        "text_color": "",
+        "bg_column": "",
+        "padding_top": 40,
+        "padding_bottom": 100
+      }
+    },
+    "video_with_text_overlay_tqNjTQ": {
+      "type": "video-with-text-overlay",
+      "blocks": {
+        "heading_hygaHh": {
+          "type": "heading",
+          "settings": {
+            "heading": "Harmony of Form ",
+            "heading_size": "hxl"
+          }
+        },
+        "subheading_UjfACV": {
+          "type": "subheading",
+          "settings": {
+            "subheading": "From inspiration"
+          }
+        }
+      },
+      "block_order": [
+        "heading_hygaHh",
+        "subheading_UjfACV"
+      ],
+      "settings": {
+        "section_width": "w-full",
+        "video_url": "https://www.youtube.com/watch?v=_9VUPq3SxOc",
+        "description_video": "Crafted from the Finest Materials",
+        "desktop_height": "desktop-height-650",
+        "mobile_height": "mobile-height-500",
+        "desktop_content_position": "bottom-center",
+        "mobile_content_position": "bottom-center",
+        "content_width": "max-w-4xl",
+        "color_text": "#ffffff",
+        "overlay_color": "#000000",
+        "overlay_gradient": "",
+        "overlay_opacity": 0
+      }
+    },
+    "collapsible_content_83Xcee": {
+      "type": "collapsible-content",
+      "blocks": {
+        "collapsible_row_QGmACa": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "How many sunglasses are produced for each design?",
+            "icon": "none",
+            "row_content": "<p>To maintain the exclusivity and uniqueness of our collections, we produce only 500 units of each design. Owning a pair of Theia sunglasses means you're wearing a truly limited edition piece, created to reflect your distinct sense of style.</p>",
+            "page": ""
+          }
+        },
+        "collapsible_row_397MBA": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Are your lenses polarized?",
+            "icon": "none",
+            "row_content": "<p>Yes, all of our lenses are expertly crafted with advanced polarization technology. This ensures that they reduce glare and provide unparalleled clarity, perfect for both style and function. Whether you're on the road or by the sea, our polarized lenses offer optimal visual performance and protection for your eyes.</p>",
+            "page": ""
+          }
+        },
+        "collapsible_row_ncFnnH": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "How long does it take to design a pair of sunglasses?",
+            "icon": "none",
+            "row_content": "<p>Each pair of Theia sunglasses is a product of precision and passion, taking approximately 11 months from concept to completion. This meticulous process allows us to perfect every detail, ensuring that each design embodies the timeless luxury and craftsmanship Theia is known for.</p>",
+            "page": ""
+          }
+        },
+        "collapsible_row_6gmfVa": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "What are lab-grown diamonds? Are they truly diamonds?",
+            "icon": "none",
+            "row_content": "<p>Lab-grown diamonds are exquisite gems crafted in state-of-the-art laboratories, replicating the natural conditions found deep within the Earth. These diamonds possess the same physical and chemical properties as their natural counterparts. Our diamonds are meticulously created using the Chemical Vapor Deposition (CVD) method, where a diamond seed is exposed to carbon-rich gases in a vacuum chamber. This process results in the formation of a flawless diamond layer, indistinguishable from a natural diamond.</p>",
+            "page": ""
+          }
+        },
+        "collapsible_row_kenNmj": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Can I change or return my item?",
+            "icon": "none",
+            "row_content": "<p>If you want to change a product into another model, please contact us so we are able to reserve the new item in our stock immediately. You are always entitled to an exchange or refund within 30 days after you have received your package, as long as the item has not been used.</p>",
+            "page": ""
+          }
+        }
+      },
+      "block_order": [
+        "collapsible_row_QGmACa",
+        "collapsible_row_397MBA",
+        "collapsible_row_ncFnnH",
+        "collapsible_row_6gmfVa",
+        "collapsible_row_kenNmj"
+      ],
+      "settings": {
+        "section_width": "container",
+        "subheading": "",
+        "heading": "FAQs",
+        "heading_size_section": "h2",
+        "description": "",
+        "layout": "vertical",
+        "heading_size": "h5",
+        "open_first_collapsible_row": false,
+        "enable_narrow_content": true,
+        "image_ratio": "adapt",
+        "desktop_layout": "image_second",
+        "bg_color": "",
+        "text_color": "",
+        "border_color": "",
+        "padding_top": 80,
+        "padding_bottom": 0
+      }
+    },
+    "related-products": {
+      "type": "related-products",
+      "settings": {
+        "section_width": "container",
+        "subheading": "",
+        "heading": "You may also like",
+        "heading_size_section": "h2",
+        "description": "",
+        "layout": "vertical",
+        "enable_stack_products": false,
+        "show_progress_bar": true,
+        "enable_overflow_visible": false,
+        "products_to_show": 10,
+        "columns_desktop": 4,
+        "columns_mobile": "2",
+        "bg_color": "",
+        "text_color": "",
+        "padding_top": 80,
+        "padding_bottom": 80
+      }
+    },
+    "multicolumn_QEkN4m": {
+      "type": "multicolumn",
+      "blocks": {
+        "column_agB6GC": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/BANNER_HP_HOR_HIM.jpg",
+            "link": "",
+            "title": "For Him",
+            "text": "<p>Enhance your eyewear selection with our high-end glasses variety. Elevate your fashion with expertly crafted frames and lenses.</p>",
+            "button_label": "Brand theiangrown",
+            "button_link": "",
+            "button_type": "underlined",
+            "show_icon": false
+          }
+        },
+        "column_tjphMA": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/BANNER_HP_FOR_HER.jpg",
+            "link": "",
+            "title": "For her",
+            "text": "<p>Embrace the brilliance of Zeus Diamonds' finely crafted pieces. Elevate your look with our stunning selection of diamond jewelry.</p>",
+            "button_label": "Explore now",
+            "button_link": "",
+            "button_type": "underlined",
+            "show_icon": false
+          }
+        }
+      },
+      "block_order": [
+        "column_agB6GC",
+        "column_tjphMA"
+      ],
+      "settings": {
+        "section_width": "container",
+        "subheading": "",
+        "heading": "DISCOVER MORE",
+        "heading_size_section": "h2",
+        "description": "",
+        "layout": "vertical",
+        "image_width": "full",
+        "image_ratio": "landscape",
+        "heading_size": "h4",
+        "column_alignment": "center",
+        "link_url": "",
+        "link_text": "",
+        "button_type": "primary",
+        "show_icon": false,
+        "enable_stack_columns": true,
+        "show_progress_bar": false,
+        "enable_overflow_visible": false,
+        "columns_desktop": 2,
+        "column_gap": 3,
+        "column_gap_mobile": 3,
+        "columns_mobile": "2",
+        "swipe_on_mobile": true,
+        "bg_color": "",
+        "text_color": "",
+        "padding_top": 36,
+        "padding_bottom": 88
+      }
+    },
+    "recently_viewed_products_FTLchU": {
+      "type": "recently-viewed-products",
+      "disabled": true,
+      "settings": {
+        "section_width": "container",
+        "subheading": "",
+        "heading": "Recently viewed products",
+        "heading_size_section": "h2",
+        "description": "",
+        "layout": "vertical",
+        "products_limit": 4,
+        "columns_desktop": 4,
+        "columns_mobile": "2",
+        "bg_color": "rgba(0,0,0,0)",
+        "text_color": "",
+        "padding_top": 0,
+        "padding_bottom": 72
+      }
+    }
+  },
+  "order": [
+    "breadcrumbs_ka3wVn",
+    "main",
+    "information-products",
+    "divider_xRJ3we",
+    "multicolumn_bYMjJX",
+    "text_with_icons_GWUedT",
+    "image_with_text_Y3wxrR",
+    "image_with_text_WgETz6",
+    "video_with_text_overlay_tqNjTQ",
+    "collapsible_content_83Xcee",
+    "related-products",
+    "multicolumn_QEkN4m",
+    "recently_viewed_products_FTLchU"
+  ]
+}
