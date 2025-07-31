@@ -1,0 +1,23 @@
+.testimonials-slider .splide__slide{
+  opacity:0.15 ;
+  transition: opacity 0.3s ease !important; 
+ }
+ .testimonials-slider .splide__slide.is-active{
+   opacity:1;
+ }
+ .testimonials-slider .splide__pagination{
+   position: static;
+ }
+ .testimonials-slider .splide__arrows{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 2.5rem;
+  padding-bottom: 0;
+  column-gap: 1rem;
+ }
+ .testimonials-slider .splide__arrow{
+    position: static;
+    transform: none;
+    box-shadow: none;
+ }
