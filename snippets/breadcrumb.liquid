@@ -1,0 +1,125 @@
+{%- capture icon -%}
+    <svg class="size-5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20" aria-hidden="true">
+        <path d="M5.555 17.776l8-16 .894.448-8 16-.894-.448z" />
+    </svg>
+{%- endcapture -%}
+{%- assign text_size = section.settings.text_size -%}
+
+ <nav class="flex justify-{{ section.settings.alignment }}" role="navigation" aria-label="Breadcrumbs">
+        <ol role="list" class="flex items-center truncate">
+            <li class="inline-flex">
+                <a href="{{ routes.root_url }}" title="{{ 'sections.breadcrumbs.home' | t | escape }}" class="{{ text_size }} mr-4">
+                    {{ 'sections.breadcrumbs.home' | t }}
+                </a>
+            </li>
+            {% if collection.url %}
+                <li>
+                    <div class="flex items-center">
+                        {{ icon }}
+                        <a href="{{ routes.all_products_collection_url }}" title="{{ 'sections.breadcrumbs.shop' | t | escape }}" class="mr-4 ml-4 {{ text_size }}" aria-current="page" >{{ 'sections.breadcrumbs.shop' | t }}</a>
+                        {{ icon }}
+                        <a href="{{ collection.url }}" title="{{ collection.title | escape }}" class="ml-4 {{ text_size }}">{{ collection.title }}</a>
+                    </div>
+                </li>
+            {% endif %}
+            {% if template contains 'list-collections' %}
+                <li>
+                    <div class="flex items-center">
+                        {{ icon }}
+                        <a href="{{ routes.all_products_collection_url }}" title="{{ 'sections.breadcrumbs.shop' | t | escape }}" class="mr-4 ml-4 {{ text_size }}" aria-current="page" >{{ 'sections.breadcrumbs.shop' | t }}</a>
+                    </div>
+                </li>
+                <li>
+                    <div class="flex items-center">
+                        {{ icon }}
+                        <span class="ml-4 {{ text_size }}" aria-current="page">{{ 'sections.breadcrumbs.collection_list' | t }}</span>
+                    </div>
+                </li>
+            {% endif %}
+            {% if template contains 'product' %}
+               {% if product.collections.first %}
+                <li>
+                    <div class="flex items-center">
+                        {{ icon }}
+                        <a href="{{ product.collections.first.url }}" title="{{ product.collections.first.title | escape }}" class="ml-4 mr-4 {{ text_size }}"> {{ product.collections.first.title }}</a>
+                    </div>
+                </li>
+               {% endif %} 
+                <li class="truncate">
+                    <div class="flex items-center">
+                        {{ icon }}
+                        <span class="ml-4 {{ text_size }} truncate" aria-current="page">{{ product.title }}</span>
+                    </div>
+                </li>
+            {% endif %}
+            {% if template contains 'cart' %}
+                <li>
+                    <div class="flex items-center">
+                        {{ icon }}
+                        <span class="ml-4 {{ text_size }}" aria-current="page">{{ 'sections.breadcrumbs.cart' | t }}</span>
+                    </div>
+                </li>
+            {% endif %}
+            {% if template contains 'blog' %}
+                {% if current_tags %}
+                <li class="inline-flex">
+                    <div class="flex items-center">
+                        {{ icon }}
+                        <a href="{{ blog.url }}" class="ml-4 {{ text_size }}" title="{{ blog.title | escape }}" >{{ blog.title }}</a>
+                    </div>
+                </li>
+                <li class="inline-flex">
+                    <div class="flex items-center">
+                        {{ icon }}
+                        <span class="ml-4 {{ text_size }}" aria-current="page">{{ current_tags }}</span>
+                    </div>
+                </li>
+                {% else %}
+                    <li>
+                        <div class="flex items-center">
+                            {{ icon }}
+                            <span class="ml-4 {{ text_size }}" aria-current="page">{{ blog.title }}</span>
+                        </div>
+                    </li>
+                {% endif %}
+            {% endif %}
+            {% if template contains 'article' %}
+                <li class="inline-flex ">
+                    <div class="flex items-center">
+                        {{ icon }}
+                        <a href="{{ blog.url }}" class="ml-4 {{ text_size }} " title="{{ blog.title | escape }}" >{{ blog.title }}</a>
+                    </div>
+                </li>
+                <li class="truncate">
+                    <div class="flex items-center ml-4">
+                        {{ icon }}
+                        <span class="ml-4 {{ text_size }} truncate" aria-current="page">{{ article.title  }}</span>
+                    </div>
+                </li>
+            {% endif %}
+            {% if template contains 'page' %}
+                <li class="truncate">
+                    <div class="flex items-center">
+                        {{ icon }}
+                        <span class="ml-4 {{ text_size }} truncate" aria-current="page">{{ page.title }}</span>
+                    </div>
+                </li>
+            {% endif  %}
+            {% if template contains 'search' %}
+			    <li>
+                    <div class="flex items-center">
+                        {{ icon }}
+                        <span class="ml-4 {{ text_size }}" aria-current="page">{{ 'sections.breadcrumbs.search' | t }}</span>
+                    </div>
+                </li>
+			  {% endif %}
+              {% if template contains 'customers' %}
+			    <li>
+                    <div class="flex items-center">
+                        {{ icon }}
+                        <span class="ml-4 {{ text_size }}" aria-current="page">{{ 'sections.breadcrumbs.account' | t }}</span>
+                    </div>
+                </li>
+			  {% endif %}
+        </ol>
+    </nav>
