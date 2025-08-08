@@ -1,1 +1,602 @@
-{"sections":{"slideshow_bDT8rN":{"type":"slideshow","blocks":{"slide_9pyT8r":{"type":"slide","settings":{"image":"shopify:\/\/shop_images\/Badass_Recliners_-_Retargeting_Static_Ad_2_1920_x_1080px_2400_x_1080_px.png","mobile_image":"shopify:\/\/shop_images\/Badass_Recliners_-_Retargeting_Static_Ad_2_1920_x_1080px_2400_x_1080_px_1200_x_1600_px.png","slide_link":"","video_background":false,"content_width":720,"content_position":"bottom-right","mobile_content_position":"middle-right","content_space":"gap-y-4","subheading":"Crafted for Comfort. Made From Whiskey Barrels.","heading":"Built for Badasses.","heading_tag":"div","heading_size":"hxl","content":"","description_size":"medium","color_text":"#ffffff","overlay_color":"#000000","overlay_opacity":20,"overlay_gradient":"","button_text_1":"Find Your Recliner","button_link_1":"shopify:\/\/collections\/recliners","button_type_1":"primary-white","button_text_2":"","button_link_2":"","button_type_2":"outline-white"}}},"block_order":["slide_9pyT8r"],"settings":{"slide_width":"w-full","desktop_height":"desktop-height-full","mobile_height":"mobile-height-550","auto_rotate":false,"change_slides_speed":8,"transition":"zoom","controls":"filled-arrows","accessibility_info":"Slideshow about our brand","bg_color":"","controls_color":"#ffffff","controls_color_arrows":"#000000","padding_top":0,"padding_bottom":0}},"scrolling_text_hgqaYM":{"type":"scrolling-text","blocks":{"text_TmyBEh":{"type":"text","settings":{"text":"Satisfaction Guaranteed","link":"","outline_text":false}},"text_q6yhd3":{"type":"text","settings":{"text":"•","link":"","outline_text":false}},"text_qpt9GQ":{"type":"text","settings":{"text":"Made from Whiskey Barrels","link":"","outline_text":false}},"text_zmfKrh":{"type":"text","settings":{"text":"•","link":"","outline_text":false}},"text_TxwcUJ":{"type":"text","settings":{"text":"Made in the USA","link":"","outline_text":false}},"text_xKDRri":{"type":"text","settings":{"text":"•","link":"","outline_text":false}}},"block_order":["text_TmyBEh","text_q6yhd3","text_qpt9GQ","text_zmfKrh","text_TxwcUJ","text_xKDRri"],"custom_css":[".responsive-image img {--media-radius: 0px;}"],"settings":{"section_width":"w-full","text_size":"size-base","pause_scroll_on_hover":true,"spacing":40,"spacing_mobile":30,"image_width":32,"speed":15,"direction":"left","bg_color":"","text_color":"","padding_top":28,"padding_bottom":20}},"featured_collection_hFbtBm":{"type":"featured-collection","settings":{"section_width":"container","subheading":"","heading":"Our Best-Selling Recliners","heading_tag":"h2","heading_size_section":"h2","description":"<p>Shop our fan-favorites.<\/p>","layout":"horizontal","collection":"recliners","products":[],"link_url":"","link_text":"View all","button_type":"underlined","show_icon":false,"enable_stack_products":false,"show_progress_bar":true,"enable_overflow_visible":false,"products_to_show":4,"columns_desktop":4,"column_gap":3,"columns_mobile":"2","column_gap_mobile":2,"swipe_on_mobile":true,"bg_color":"","text_color":"","padding_top":80,"padding_bottom":80}},"featured_product_7yD8dN":{"type":"featured-product","blocks":{"text_zRMKMD":{"type":"text","settings":{"text":"Badass Recliners","text_style":"subheading"}},"title_Di3fcW":{"type":"title","settings":{"heading_size":"h2"}},"rating_QwTdfN":{"type":"rating","settings":{}},"price_h7jXmX":{"type":"price","settings":{"show_sale_badge":true,"sale_badge_type":"percentage"}},"sku_EMAzbJ":{"type":"sku","settings":{"text_style":"uppercase"}},"variant_picker_VQfdjp":{"type":"variant_picker","settings":{"picker_type":"button","hide_sold_out_variants":false,"color_picker_type":"native_color_swatch","style":"outline","option_name":"Size","size_chart_page":""}},"quantity_selector_gWfLfp":{"type":"quantity_selector","settings":{}},"buy_buttons_JjnmfE":{"type":"buy_buttons","settings":{"show_two_columns":false,"show_dynamic_checkout":true,"show_gift_card_recipient":true,"show_pickup_availability":true,"show_back_in_stock":false,"text_back_in_stock":"Notify me"}},"icon_with_text_xDiqWV":{"type":"icon-with-text","settings":{"layout":"vertical","icon_size":20,"icon_1":"lock","heading_1":"Secure Checkout","icon_2":"truck","heading_2":"Ships in 4-6 Weeks","icon_3":"trophy","heading_3":"Satisfaction Guaranteed","icon_4":"none","heading_4":""}},"separator_LGdwbk":{"type":"separator","settings":{"show_border":false,"divider_space":2}}},"block_order":["text_zRMKMD","title_Di3fcW","rating_QwTdfN","price_h7jXmX","sku_EMAzbJ","variant_picker_VQfdjp","quantity_selector_gWfLfp","buy_buttons_JjnmfE","icon_with_text_xDiqWV","separator_LGdwbk"],"settings":{"section_width":"container","product":"whiskey-barrel-recliner","enable_sticky_info":true,"media_width":55,"media_aspect_ratio":"adapt","thumbnail_aspect_ratio":"square","gallery_layout":"thumbnail_left","media_position":"left","show_lightbox":false,"enable_video_autoplay":true,"enable_video_looping":false,"mobile_thumbnails":"show","enable_media_grouping":false,"grouping_type":"variant_group","bg_color":"","text_color":"","border_color":"","padding_top":80,"padding_bottom":80}},"testimonials_agXwmk":{"type":"testimonials","blocks":{"quote_beKkw7":{"type":"quote","settings":{"product":"whiskey-barrel-recliner","rating":5,"text":"This is my second Badass Recliner! My wife chose the first one we bought and I enjoyed how comfortable it was, so I needed one for myself. Anyone can own a recliner, but not everyone has a recliner made out of whiskey barrels. My buddies fight over the chair when they come over.","image":"shopify:\/\/shop_images\/Screenshot_2025-06-08_at_10.48.42_PM.png","media_size":"square","name":"Isaiah R.","position":""}},"quote_RApQ8c":{"type":"quote","settings":{"product":"whiskey-barrel-recliner","rating":5,"text":"I was hesitant to buy two recliners without even trying them out. After chatting with the owners on FB, I took a leap of faith and purchased them anyway. I’m here today to share THEY ARE AWESOME!!! Very comfortable and the craftsmanship is top notch! They shipped from Calif. to NY with no problem. The boxes looked brand new when the drivers dropped them off. I would definitely purchase again! These chairs are truly Bad Ass!","image":"shopify:\/\/shop_images\/Screenshot_2025-06-08_at_10.43.51_PM.png","media_size":"square","name":"Robert Van Brunt","position":""}},"quote_AzEDLf":{"type":"quote","settings":{"product":"whiskey-barrel-recliner","rating":5,"text":"We absolutely love our whiskey barrel recliners!! So worth figuring out the delivery to get them to our TN cabin. They’re comfy and so well made! Thank you Greg! You are a bad ass!!","image":"shopify:\/\/shop_images\/Screenshot_2025-06-08_at_10.42.56_PM.png","media_size":"square","name":"Kim Giachinta","position":""}},"quote_erEVHb":{"type":"quote","settings":{"product":"","rating":5,"text":"I just received mine today and love it! I’m 6’-4” & 210 pounds and I fit in it quite well. Great product! I was a bit skeptical at first in ordering on-line sight unseen. But it all worked out. High quality wood and leather and smooth opening and closing. Well done!","image":"shopify:\/\/shop_images\/unnamed_7_146da8c6-7a30-45e4-9c47-dcafa5cb6788.jpg","media_size":"square","name":"Ron Auletta","position":""}}},"block_order":["quote_beKkw7","quote_RApQ8c","quote_AzEDLf","quote_erEVHb"],"settings":{"section_width":"w-full","subheading":"","heading":"Rated 5-Stars By Our Customers","heading_tag":"h2","heading_size_section":"h2","description":"<p>Here's what people are saying about their recliners...<\/p>","layout":"vertical","testimonial_type":"focused","content_alignment":"center","vertical_alignment":"center","content_size":"body-1","show_rating":true,"show_arrows":true,"auto_rotate":true,"change_slides_speed":5,"bg_color":"#f4f4f8","text_color":"#000000","padding_top":100,"padding_bottom":100}},"rich_text_8T33VV":{"type":"rich-text","blocks":{"heading_iUERD7":{"type":"heading","settings":{"heading":"Make Your Space Look Badass","heading_tag":"h2","heading_size":"h2"}},"text_6TwhPe":{"type":"text","settings":{"text":"<p>Experience the ultimate in comfort and style with our whiskey barrel recliners. Crafted from authentic materials, these unique and luxurious pieces are sure to elevate your home decor. With their sturdy construction and plush cushioning, you can sit back and relax while sipping on your favorite whiskey. Experience the ultimate in relaxation with these one-of-a-kind pieces.<\/p>","large_text":false}},"separator_AzBhTc":{"type":"separator","settings":{"show_border":false,"space":4}},"button_VE99i4":{"type":"button","settings":{"button_label":"Customize Your Recliner","button_link":"shopify:\/\/collections\/recliners","button_type":"outline","show_icon":false}}},"block_order":["heading_iUERD7","text_6TwhPe","separator_AzBhTc","button_VE99i4"],"settings":{"section_width":"container-fluid","content_width":"max-w-7xl","content_alignment":"center","bg_color":"rgba(0,0,0,0)","text_color":"","padding_top":80,"padding_bottom":0}},"lookbook_slider_pAdH4e":{"type":"lookbook-slider","blocks":{"product_yLNLg3":{"type":"product","settings":{"product":"whiskey-barrel-recliner","horizontal_position":47,"vertical_position":51,"horizontal_position_mobile":32,"vertical_position_mobile":72}}},"block_order":["product_yLNLg3"],"settings":{"section_width":"container","heading":"","layout":"right","image":"shopify:\/\/shop_images\/IMG_0606.jpg","media_size":"square","columns_desktop":"1","show_arrows":false,"show_progress_bar":false,"swipe_on_mobile":true,"column_gap":3.5,"column_gap_mobile":2,"bg_color":"#ffffff","text_color":"","hotspot_color":"#ffffff","hotspot_color_after":"#000000","padding_top":56,"padding_bottom":80}},"before_after_image_mAMhFX":{"type":"before-after-image","blocks":{"image_papDVN":{"type":"image","settings":{"image":"shopify:\/\/shop_images\/1_1e08c530-a3e7-45ad-bc6e-ab8175d57aaa.png","label_text":"Before"}},"image_mbmfbQ":{"type":"image","settings":{"image":"shopify:\/\/shop_images\/Untitled_design_70.png","mobile_image":"shopify:\/\/shop_images\/Bad_Ass_Recliners_-_Whisky_Barrel_Recliner_-_Static_Ad_1920_x_1080_px.png","label_text":"After"}}},"block_order":["image_papDVN","image_mbmfbQ"],"settings":{"section_width":"container","subheading":"","heading":"A Recliner That Tells a Story","heading_tag":"h2","heading_size_section":"h2","description":"","layout":"vertical","image_placement":"bottom","desktop_height":"desktop-height-650","mobile_height":"mobile-height-400","bg_color":"","text_color":"","padding_top":80,"padding_bottom":0}},"divider_XrN4rF":{"type":"divider","settings":{"section_width":"container","spacer_mobile":2,"spacer_desktop":2,"show_border":true,"bg_color":"","color":"","style":"solid","thickness":1}},"divider_wiE6Jr":{"type":"divider","settings":{"section_width":"container","spacer_mobile":2,"spacer_desktop":2,"show_border":true,"bg_color":"","color":"","style":"solid","thickness":1}},"gallery_socical_QRe8hD":{"type":"gallery-socical","blocks":{"gallery_JzXt3e":{"type":"gallery","settings":{"image":"shopify:\/\/shop_images\/IMG_0605.jpg","text":"","link":""}},"gallery_h9Giqc":{"type":"gallery","settings":{"image":"shopify:\/\/shop_images\/IMG_0606.jpg","text":"","link":""}},"gallery_q8p6mK":{"type":"gallery","settings":{"image":"shopify:\/\/shop_images\/IMG_0609.jpg","text":"","link":""}},"gallery_HtBGeQ":{"type":"gallery","settings":{"image":"shopify:\/\/shop_images\/IMG_0607.jpg","text":"","link":""}},"gallery_BKmF4a":{"type":"gallery","settings":{"image":"shopify:\/\/shop_images\/unnamed_7_146da8c6-7a30-45e4-9c47-dcafa5cb6788.jpg","text":"","link":""}}},"block_order":["gallery_JzXt3e","gallery_h9Giqc","gallery_q8p6mK","gallery_HtBGeQ","gallery_BKmF4a"],"settings":{"section_width":"container-fluid","subheading":"Want to see more Badass Recliners?","heading":"Follow Us On Instagram","heading_tag":"h2","heading_size_section":"h2","description":"","layout":"vertical","link_url":"","link_text":"","button_type":"primary","show_icon":false,"layout_gallery":"carousel","image_size":"square","icon":"instagram","images_per_row":5,"gap":1,"columns_mobile":"2","gap_mobile":1,"swipe_on_mobile":true,"bg_color":"","text_color":"","padding_top":80,"padding_bottom":80}}},"order":["slideshow_bDT8rN","scrolling_text_hgqaYM","featured_collection_hFbtBm","featured_product_7yD8dN","testimonials_agXwmk","rich_text_8T33VV","lookbook_slider_pAdH4e","before_after_image_mAMhFX","divider_XrN4rF","divider_wiE6Jr","gallery_socical_QRe8hD"]}
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "slideshow_bDT8rN": {
+      "type": "slideshow",
+      "blocks": {
+        "slide_9pyT8r": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify://shop_images/Badass_Recliners_-_Retargeting_Static_Ad_2_1920_x_1080px_2400_x_1080_px.png",
+            "mobile_image": "shopify://shop_images/Badass_Recliners_-_Retargeting_Static_Ad_2_1920_x_1080px_2400_x_1080_px_1200_x_1600_px.png",
+            "slide_link": "",
+            "video_background": false,
+            "content_width": 720,
+            "content_position": "bottom-right",
+            "mobile_content_position": "middle-right",
+            "content_space": "gap-y-4",
+            "subheading": "Crafted for Comfort. Made From Whiskey Barrels.",
+            "heading": "Built for Badasses.",
+            "heading_tag": "div",
+            "heading_size": "hxl",
+            "content": "",
+            "description_size": "medium",
+            "color_text": "#ffffff",
+            "overlay_color": "#000000",
+            "overlay_opacity": 20,
+            "overlay_gradient": "",
+            "button_text_1": "Find Your Recliner",
+            "button_link_1": "shopify://collections/recliners",
+            "button_type_1": "primary-white",
+            "button_text_2": "",
+            "button_link_2": "",
+            "button_type_2": "outline-white"
+          }
+        }
+      },
+      "block_order": [
+        "slide_9pyT8r"
+      ],
+      "settings": {
+        "slide_width": "w-full",
+        "desktop_height": "desktop-height-full",
+        "mobile_height": "mobile-height-550",
+        "auto_rotate": false,
+        "change_slides_speed": 8,
+        "transition": "zoom",
+        "controls": "filled-arrows",
+        "accessibility_info": "Slideshow about our brand",
+        "bg_color": "",
+        "controls_color": "#ffffff",
+        "controls_color_arrows": "#000000",
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    },
+    "scrolling_text_hgqaYM": {
+      "type": "scrolling-text",
+      "blocks": {
+        "text_TmyBEh": {
+          "type": "text",
+          "settings": {
+            "text": "Satisfaction Guaranteed",
+            "link": "",
+            "outline_text": false
+          }
+        },
+        "text_q6yhd3": {
+          "type": "text",
+          "settings": {
+            "text": "•",
+            "link": "",
+            "outline_text": false
+          }
+        },
+        "text_qpt9GQ": {
+          "type": "text",
+          "settings": {
+            "text": "Made from Whiskey Barrels",
+            "link": "",
+            "outline_text": false
+          }
+        },
+        "text_zmfKrh": {
+          "type": "text",
+          "settings": {
+            "text": "•",
+            "link": "",
+            "outline_text": false
+          }
+        },
+        "text_TxwcUJ": {
+          "type": "text",
+          "settings": {
+            "text": "Made in the USA",
+            "link": "",
+            "outline_text": false
+          }
+        },
+        "text_xKDRri": {
+          "type": "text",
+          "settings": {
+            "text": "•",
+            "link": "",
+            "outline_text": false
+          }
+        }
+      },
+      "block_order": [
+        "text_TmyBEh",
+        "text_q6yhd3",
+        "text_qpt9GQ",
+        "text_zmfKrh",
+        "text_TxwcUJ",
+        "text_xKDRri"
+      ],
+      "custom_css": [
+        ".responsive-image img {--media-radius: 0px;}"
+      ],
+      "settings": {
+        "section_width": "w-full",
+        "text_size": "size-base",
+        "pause_scroll_on_hover": true,
+        "spacing": 40,
+        "spacing_mobile": 30,
+        "image_width": 32,
+        "speed": 15,
+        "direction": "left",
+        "bg_color": "",
+        "text_color": "",
+        "padding_top": 28,
+        "padding_bottom": 20
+      }
+    },
+    "featured_collection_hFbtBm": {
+      "type": "featured-collection",
+      "settings": {
+        "section_width": "container",
+        "subheading": "",
+        "heading": "Our Best-Selling Recliners",
+        "heading_tag": "h2",
+        "heading_size_section": "h2",
+        "description": "<p>Shop our fan-favorites.</p>",
+        "layout": "horizontal",
+        "collection": "recliners",
+        "products": [],
+        "link_url": "",
+        "link_text": "View all",
+        "button_type": "underlined",
+        "show_icon": false,
+        "enable_stack_products": false,
+        "show_progress_bar": true,
+        "enable_overflow_visible": false,
+        "products_to_show": 4,
+        "columns_desktop": 4,
+        "column_gap": 3,
+        "columns_mobile": "2",
+        "column_gap_mobile": 2,
+        "swipe_on_mobile": true,
+        "bg_color": "",
+        "text_color": "",
+        "padding_top": 80,
+        "padding_bottom": 80
+      }
+    },
+    "featured_product_7yD8dN": {
+      "type": "featured-product",
+      "blocks": {
+        "text_zRMKMD": {
+          "type": "text",
+          "settings": {
+            "text": "Badass Recliners",
+            "text_style": "subheading"
+          }
+        },
+        "title_Di3fcW": {
+          "type": "title",
+          "settings": {
+            "heading_size": "h2"
+          }
+        },
+        "rating_QwTdfN": {
+          "type": "rating",
+          "settings": {}
+        },
+        "price_h7jXmX": {
+          "type": "price",
+          "settings": {
+            "show_sale_badge": true,
+            "sale_badge_type": "percentage"
+          }
+        },
+        "sku_EMAzbJ": {
+          "type": "sku",
+          "settings": {
+            "text_style": "uppercase"
+          }
+        },
+        "variant_picker_VQfdjp": {
+          "type": "variant_picker",
+          "settings": {
+            "picker_type": "button",
+            "hide_sold_out_variants": false,
+            "color_picker_type": "native_color_swatch",
+            "style": "outline",
+            "option_name": "Size",
+            "size_chart_page": ""
+          }
+        },
+        "quantity_selector_gWfLfp": {
+          "type": "quantity_selector",
+          "settings": {}
+        },
+        "icon_with_text_xDiqWV": {
+          "type": "icon-with-text",
+          "settings": {
+            "layout": "vertical",
+            "icon_size": 20,
+            "icon_1": "lock",
+            "heading_1": "Secure Checkout",
+            "icon_2": "truck",
+            "heading_2": "Ships in 4-6 Weeks",
+            "icon_3": "trophy",
+            "heading_3": "Satisfaction Guaranteed",
+            "icon_4": "none",
+            "heading_4": ""
+          }
+        },
+        "separator_LGdwbk": {
+          "type": "separator",
+          "settings": {
+            "show_border": false,
+            "divider_space": 2
+          }
+        }
+      },
+      "block_order": [
+        "text_zRMKMD",
+        "title_Di3fcW",
+        "rating_QwTdfN",
+        "price_h7jXmX",
+        "sku_EMAzbJ",
+        "variant_picker_VQfdjp",
+        "quantity_selector_gWfLfp",
+        "icon_with_text_xDiqWV",
+        "separator_LGdwbk"
+      ],
+      "settings": {
+        "section_width": "container",
+        "product": "whiskey-barrel-recliner",
+        "enable_sticky_info": true,
+        "media_width": 55,
+        "media_aspect_ratio": "adapt",
+        "thumbnail_aspect_ratio": "square",
+        "gallery_layout": "thumbnail_left",
+        "media_position": "left",
+        "show_lightbox": false,
+        "enable_video_autoplay": true,
+        "enable_video_looping": false,
+        "mobile_thumbnails": "show",
+        "enable_media_grouping": false,
+        "grouping_type": "variant_group",
+        "bg_color": "",
+        "text_color": "",
+        "border_color": "",
+        "padding_top": 80,
+        "padding_bottom": 80
+      }
+    },
+    "testimonials_agXwmk": {
+      "type": "testimonials",
+      "blocks": {
+        "quote_beKkw7": {
+          "type": "quote",
+          "settings": {
+            "product": "whiskey-barrel-recliner",
+            "rating": 5,
+            "text": "This is my second Badass Recliner! My wife chose the first one we bought and I enjoyed how comfortable it was, so I needed one for myself. Anyone can own a recliner, but not everyone has a recliner made out of whiskey barrels. My buddies fight over the chair when they come over.",
+            "image": "shopify://shop_images/Screenshot_2025-06-08_at_10.48.42_PM.png",
+            "media_size": "square",
+            "name": "Isaiah R.",
+            "position": ""
+          }
+        },
+        "quote_RApQ8c": {
+          "type": "quote",
+          "settings": {
+            "product": "whiskey-barrel-recliner",
+            "rating": 5,
+            "text": "I was hesitant to buy two recliners without even trying them out. After chatting with the owners on FB, I took a leap of faith and purchased them anyway. I’m here today to share THEY ARE AWESOME!!! Very comfortable and the craftsmanship is top notch! They shipped from Calif. to NY with no problem. The boxes looked brand new when the drivers dropped them off. I would definitely purchase again! These chairs are truly Bad Ass!",
+            "image": "shopify://shop_images/Screenshot_2025-06-08_at_10.43.51_PM.png",
+            "media_size": "square",
+            "name": "Robert Van Brunt",
+            "position": ""
+          }
+        },
+        "quote_AzEDLf": {
+          "type": "quote",
+          "settings": {
+            "product": "whiskey-barrel-recliner",
+            "rating": 5,
+            "text": "We absolutely love our whiskey barrel recliners!! So worth figuring out the delivery to get them to our TN cabin. They’re comfy and so well made! Thank you Greg! You are a bad ass!!",
+            "image": "shopify://shop_images/Screenshot_2025-06-08_at_10.42.56_PM.png",
+            "media_size": "square",
+            "name": "Kim Giachinta",
+            "position": ""
+          }
+        },
+        "quote_erEVHb": {
+          "type": "quote",
+          "settings": {
+            "product": "",
+            "rating": 5,
+            "text": "I just received mine today and love it! I’m 6’-4” & 210 pounds and I fit in it quite well. Great product! I was a bit skeptical at first in ordering on-line sight unseen. But it all worked out. High quality wood and leather and smooth opening and closing. Well done!",
+            "image": "shopify://shop_images/unnamed_7_146da8c6-7a30-45e4-9c47-dcafa5cb6788.jpg",
+            "media_size": "square",
+            "name": "Ron Auletta",
+            "position": ""
+          }
+        }
+      },
+      "block_order": [
+        "quote_beKkw7",
+        "quote_RApQ8c",
+        "quote_AzEDLf",
+        "quote_erEVHb"
+      ],
+      "settings": {
+        "section_width": "w-full",
+        "subheading": "",
+        "heading": "Rated 5-Stars By Our Customers",
+        "heading_tag": "h2",
+        "heading_size_section": "h2",
+        "description": "<p>Here's what people are saying about their recliners...</p>",
+        "layout": "vertical",
+        "testimonial_type": "focused",
+        "content_alignment": "center",
+        "vertical_alignment": "center",
+        "content_size": "body-1",
+        "show_rating": true,
+        "show_arrows": true,
+        "auto_rotate": true,
+        "change_slides_speed": 5,
+        "bg_color": "#f4f4f8",
+        "text_color": "#000000",
+        "padding_top": 100,
+        "padding_bottom": 100
+      }
+    },
+    "rich_text_8T33VV": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_iUERD7": {
+          "type": "heading",
+          "settings": {
+            "heading": "Make Your Space Look Badass",
+            "heading_tag": "h2",
+            "heading_size": "h2"
+          }
+        },
+        "text_6TwhPe": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Experience the ultimate in comfort and style with our whiskey barrel recliners. Crafted from authentic materials, these unique and luxurious pieces are sure to elevate your home decor. With their sturdy construction and plush cushioning, you can sit back and relax while sipping on your favorite whiskey. Experience the ultimate in relaxation with these one-of-a-kind pieces.</p>",
+            "large_text": false
+          }
+        },
+        "separator_AzBhTc": {
+          "type": "separator",
+          "settings": {
+            "show_border": false,
+            "space": 4
+          }
+        },
+        "button_VE99i4": {
+          "type": "button",
+          "settings": {
+            "button_label": "Customize Your Recliner",
+            "button_link": "shopify://collections/recliners",
+            "button_type": "outline",
+            "show_icon": false
+          }
+        }
+      },
+      "block_order": [
+        "heading_iUERD7",
+        "text_6TwhPe",
+        "separator_AzBhTc",
+        "button_VE99i4"
+      ],
+      "settings": {
+        "section_width": "container-fluid",
+        "content_width": "max-w-7xl",
+        "content_alignment": "center",
+        "bg_color": "rgba(0,0,0,0)",
+        "text_color": "",
+        "padding_top": 80,
+        "padding_bottom": 0
+      }
+    },
+    "lookbook_slider_pAdH4e": {
+      "type": "lookbook-slider",
+      "blocks": {
+        "product_yLNLg3": {
+          "type": "product",
+          "settings": {
+            "product": "whiskey-barrel-recliner",
+            "horizontal_position": 47,
+            "vertical_position": 51,
+            "horizontal_position_mobile": 32,
+            "vertical_position_mobile": 72
+          }
+        }
+      },
+      "block_order": [
+        "product_yLNLg3"
+      ],
+      "settings": {
+        "section_width": "container",
+        "heading": "",
+        "layout": "right",
+        "image": "shopify://shop_images/IMG_0606.jpg",
+        "media_size": "square",
+        "columns_desktop": "1",
+        "show_arrows": false,
+        "show_progress_bar": false,
+        "swipe_on_mobile": true,
+        "column_gap": 3.5,
+        "column_gap_mobile": 2,
+        "bg_color": "#ffffff",
+        "text_color": "",
+        "hotspot_color": "#ffffff",
+        "hotspot_color_after": "#000000",
+        "padding_top": 56,
+        "padding_bottom": 80
+      }
+    },
+    "before_after_image_mAMhFX": {
+      "type": "before-after-image",
+      "blocks": {
+        "image_papDVN": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/1_1e08c530-a3e7-45ad-bc6e-ab8175d57aaa.png",
+            "label_text": "Before"
+          }
+        },
+        "image_mbmfbQ": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/Untitled_design_70.png",
+            "mobile_image": "shopify://shop_images/Bad_Ass_Recliners_-_Whisky_Barrel_Recliner_-_Static_Ad_1920_x_1080_px.png",
+            "label_text": "After"
+          }
+        }
+      },
+      "block_order": [
+        "image_papDVN",
+        "image_mbmfbQ"
+      ],
+      "settings": {
+        "section_width": "container",
+        "subheading": "",
+        "heading": "A Recliner That Tells a Story",
+        "heading_tag": "h2",
+        "heading_size_section": "h2",
+        "description": "",
+        "layout": "vertical",
+        "image_placement": "bottom",
+        "desktop_height": "desktop-height-650",
+        "mobile_height": "mobile-height-400",
+        "bg_color": "",
+        "text_color": "",
+        "padding_top": 80,
+        "padding_bottom": 0
+      }
+    },
+    "divider_XrN4rF": {
+      "type": "divider",
+      "settings": {
+        "section_width": "container",
+        "spacer_mobile": 2,
+        "spacer_desktop": 2,
+        "show_border": true,
+        "bg_color": "",
+        "color": "",
+        "style": "solid",
+        "thickness": 1
+      }
+    },
+    "divider_wiE6Jr": {
+      "type": "divider",
+      "settings": {
+        "section_width": "container",
+        "spacer_mobile": 2,
+        "spacer_desktop": 2,
+        "show_border": true,
+        "bg_color": "",
+        "color": "",
+        "style": "solid",
+        "thickness": 1
+      }
+    },
+    "gallery_socical_QRe8hD": {
+      "type": "gallery-socical",
+      "blocks": {
+        "gallery_JzXt3e": {
+          "type": "gallery",
+          "settings": {
+            "image": "shopify://shop_images/IMG_0605.jpg",
+            "text": "",
+            "link": ""
+          }
+        },
+        "gallery_h9Giqc": {
+          "type": "gallery",
+          "settings": {
+            "image": "shopify://shop_images/IMG_0606.jpg",
+            "text": "",
+            "link": ""
+          }
+        },
+        "gallery_q8p6mK": {
+          "type": "gallery",
+          "settings": {
+            "image": "shopify://shop_images/IMG_0609.jpg",
+            "text": "",
+            "link": ""
+          }
+        },
+        "gallery_HtBGeQ": {
+          "type": "gallery",
+          "settings": {
+            "image": "shopify://shop_images/IMG_0607.jpg",
+            "text": "",
+            "link": ""
+          }
+        },
+        "gallery_BKmF4a": {
+          "type": "gallery",
+          "settings": {
+            "image": "shopify://shop_images/unnamed_7_146da8c6-7a30-45e4-9c47-dcafa5cb6788.jpg",
+            "text": "",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "gallery_JzXt3e",
+        "gallery_h9Giqc",
+        "gallery_q8p6mK",
+        "gallery_HtBGeQ",
+        "gallery_BKmF4a"
+      ],
+      "settings": {
+        "section_width": "container-fluid",
+        "subheading": "Want to see more Badass Recliners?",
+        "heading": "Follow Us On Instagram",
+        "heading_tag": "h2",
+        "heading_size_section": "h2",
+        "description": "",
+        "layout": "vertical",
+        "link_url": "",
+        "link_text": "",
+        "button_type": "primary",
+        "show_icon": false,
+        "layout_gallery": "carousel",
+        "image_size": "square",
+        "icon": "instagram",
+        "images_per_row": 5,
+        "gap": 1,
+        "columns_mobile": "2",
+        "gap_mobile": 1,
+        "swipe_on_mobile": true,
+        "bg_color": "",
+        "text_color": "",
+        "padding_top": 80,
+        "padding_bottom": 80
+      }
+    }
+  },
+  "order": [
+    "slideshow_bDT8rN",
+    "scrolling_text_hgqaYM",
+    "featured_collection_hFbtBm",
+    "featured_product_7yD8dN",
+    "testimonials_agXwmk",
+    "rich_text_8T33VV",
+    "lookbook_slider_pAdH4e",
+    "before_after_image_mAMhFX",
+    "divider_XrN4rF",
+    "divider_wiE6Jr",
+    "gallery_socical_QRe8hD"
+  ]
+}
