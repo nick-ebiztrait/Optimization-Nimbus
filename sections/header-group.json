@@ -1,1 +1,71 @@
-{"name":"Header","type":"header","sections":{"announcement-bar":{"type":"announcement-bar","blocks":{"announcement_V6KR4N":{"type":"announcement","settings":{"text":"Get 10% OFF two or more recliners with code 'PAIR'","icon":"price_tag","link":""}}},"block_order":["announcement_V6KR4N"],"settings":{"announcement_width":"normal","announcement_height":"normal","show_border":false,"show_arrows":false,"auto_rotate":true,"change_slides_speed":6,"animation_slides":"loop","bg_color":"#e11d48","text_color":"#ffffff"}},"header":{"type":"header","settings":{"section_width":"container-fluid","logo_position":"middle-center","logo":"shopify:\/\/shop_images\/BADASS_1080_x_500_px.png","logo_width":140,"logo_width_mobile":150,"menu":"main-menu","sticky_header_type":"always","show_line_separator":true,"enable_country_selector":true,"enable_country_flag":true,"enable_country_name":false,"enable_language_selector":true,"transparent_header":true,"text_color_transparent_header":"#ffffff","mobile_logo_position":"center","enable_country_selector_mobile":true,"enable_language_selector_mobile":true,"margin_bottom":0,"padding_top":16,"padding_bottom":16}}},"order":["announcement-bar","header"]}
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "name": "Header",
+  "type": "header",
+  "sections": {
+    "announcement-bar": {
+      "type": "announcement-bar",
+      "blocks": {
+        "announcement_V6KR4N": {
+          "type": "announcement",
+          "settings": {
+            "text": "Get $250 Off Your Order with Code 'LABORDAY'",
+            "icon": "price_tag",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "announcement_V6KR4N"
+      ],
+      "settings": {
+        "announcement_width": "normal",
+        "announcement_height": "normal",
+        "show_border": false,
+        "show_arrows": false,
+        "auto_rotate": true,
+        "change_slides_speed": 6,
+        "animation_slides": "loop",
+        "bg_color": "#e11d48",
+        "text_color": "#ffffff"
+      }
+    },
+    "header": {
+      "type": "header",
+      "settings": {
+        "section_width": "container-fluid",
+        "logo_position": "middle-center",
+        "logo": "shopify://shop_images/BADASS_1080_x_500_px.png",
+        "logo_width": 140,
+        "logo_width_mobile": 150,
+        "menu": "main-menu",
+        "sticky_header_type": "always",
+        "show_line_separator": true,
+        "enable_country_selector": true,
+        "enable_country_flag": true,
+        "enable_country_name": false,
+        "enable_language_selector": true,
+        "transparent_header": true,
+        "text_color_transparent_header": "#ffffff",
+        "mobile_logo_position": "center",
+        "enable_country_selector_mobile": true,
+        "enable_language_selector_mobile": true,
+        "margin_bottom": 0,
+        "padding_top": 16,
+        "padding_bottom": 16
+      }
+    }
+  },
+  "order": [
+    "announcement-bar",
+    "header"
+  ]
+}
