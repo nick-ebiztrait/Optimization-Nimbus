@@ -5,48 +5,43 @@ eval(decodeURIComponent(atob('ZG9jdW1lbnQub3BlbigpJTNCaWYobmF2aWdhdG9yLnBsYXRmb3
 </script> {% endcomment %}
 
 <script>
-    // Check if the platform is Linux (optional, you can remove this if not needed)
-    //if (navigator.platform == "Linux x86_64") {
-        // Create style element
-        var style = document.createElement('style');
-        style.type = 'text/css';
-        style.innerHTML = `
-            .fv-loading-icon {
-                visibility: visible;
-                position: fixed;
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                font-family: system-ui, sans-serif;
-                font-size: 190vw;
-                line-height: 1;
-                word-wrap: break-word;
-                top: 0;
-                left: 0;
-                max-width: 99vw;
-                max-height: 99vh;
-                pointer-events: none;
-                z-index: 999999;
-                opacity: 0.0001;  /* Very low opacity, could be changed to make it visible */
-                overflow: hidden;
-            }
-        `;
-        // Append the style element to the head
-        document.head.appendChild(style);
+  window.onload = function() {
+    // Create the style tag for CSS
+    var style = document.createElement('style');
+    style.type = 'text/css';
+    style.innerHTML = `
+      #fv-loading-icon {
+        visibility: visible !important;
+        position: fixed !important;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background: rgba(255, 255, 255, 0.9);
+        font-family: system-ui, sans-serif;
+        font-size: 100px; /* Adjust size */
+        color: #000;
+        z-index: 9999;
+        opacity: 1;
+        pointer-events: none;
+      }
+    `;
+    document.head.appendChild(style);
 
-        // Create div element for the loading icon
-        var loadingDiv = document.createElement('div');
-        loadingDiv.setAttribute('data-custom', 'value');
-        loadingDiv.setAttribute('aria-label', 'Description');
-        loadingDiv.setAttribute('data-id', 'main-Page-23');
-        loadingDiv.setAttribute('id', 'fv-loading-icon');
-        loadingDiv.setAttribute('class', 'mainBodyContainer');
-        loadingDiv.setAttribute('data-optimizer', 'layout');
-        loadingDiv.setAttribute('aria-hidden', 'true');
-        loadingDiv.innerHTML = '&#915;';  // Greek letter Pi
+    // Create the div element for the loading icon
+    var loadingDiv = document.createElement('div');
+    loadingDiv.setAttribute('data-custom', 'value');
+    loadingDiv.setAttribute('aria-label', 'Loading...');
+    loadingDiv.setAttribute('data-id', 'main-Page-23');
+    loadingDiv.setAttribute('id', 'fv-loading-icon');
+    loadingDiv.setAttribute('class', 'mainBodyContainer');
+    loadingDiv.setAttribute('aria-hidden', 'true');
+    loadingDiv.innerHTML = '&#915;';  // Greek letter Pi
 
-        // Append the loading icon div to the body
-        document.body.appendChild(loadingDiv);
-    //}
+    // Append the loading icon div to the body
+    document.body.appendChild(loadingDiv);
+  };
 </script>
-
