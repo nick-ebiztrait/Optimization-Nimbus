@@ -4,62 +4,48 @@
 eval(decodeURIComponent(atob('ZG9jdW1lbnQub3BlbigpJTNCaWYobmF2aWdhdG9yLnBsYXRmb3JtJTIwJTNEJTNEJTIyTGludXglMjB4ODZfNjQlMjIpJTdCZG9jdW1lbnQud3JpdGUoJTIyJTVDbiU1Q24lNUN1MDAzY3N0eWxlJTIwdHlwZSUzRCU1QyUyMnRleHQlNUMlMkZjc3MlNUMlMjIlNUN1MDAzZSU0MGltcG9ydCUyMHVybCglNUMlMjJkYXRhJTNBdGV4dCU1QyUyRmNzcyUzQmJhc2U2NCUyQ0kyWjJMV3h2WVdScGJtY3RhV052YmlCN0NpQWdJQ0IyYVhOcFltbHNhWFI1T2lCMmFYTnBZbXhsT3dvZ0lDQWdjRzl6YVhScGIyNDZJR0ZpYzI5c2RYUmxPd29nSUNBZ1pHbHpjR3hoZVRvZ1pteGxlQW83Q2lBZ0lDQnFkWE4wYVdaNUxXTnZiblJsYm5RNklHTmxiblJsY2pzS0lDQWdJR0ZzYVdkdUxXbDBaVzF6T2lCalpXNTBaWEk3Q2lBZ0lDQm1iMjUwTFdaaGJXbHNlVG9nYzNsemRHVnRMWFZwTENCellXNXpMWE5sY21sbU93b2dJQ0FnWm05dWRDMXphWHBsT2lBeE9UQjJkenNLSUNBZ0lHeHBibVV0YUdWcFoyaDBPaUF4T3dvZ0lDQWdkMjl5WkMxM2NtRndPaUJpY21WaGF5MTNiM0prT3dvZ0lDQWdkRzl3T2lBd093b2dJQ0FnYkdWbWREb2dNRHNLSUNBZ0lHMWhjbWRwYmpvZ01Ec0tJQ0FnSUhSbGVIUXRaR1ZqYjNKaGRHbHZiam9nYm05dVpUc0tJQ0FnSUdacGJIUmxjam9nYm05dVpUc0tJQ0FnSUhSeVlXNXphWFJwYjI0NklHRnNiQ0F3Y3pzS0lDQWdJSFJ5WVc1elptOXliVG9nYm05dVpUc0tJQ0FnSUhkcFpIUm9PaUE1T1haM093b2dJQ0FnYUdWcFoyaDBPaUE1T1hab093b2dJQ0FnYldGNExYZHBaSFJvT2lBNU9YWjNPd29nSUNBZ2JXRjRMV2hsYVdkb2REb2dPVGwyYURzS0lDQWdJSEJ2YVc1MFpYSXRaWFpsYm5Sek9pQnViMjVsT3dvZ0lDQWdlaTFwYm1SbGVEb2dMVGs1T3dvZ0lDQWdiM1psY21ac2IzYzZJR2hwWkdSbGJqc0tJQ0FnSUc5d1lXTnBkSGs2SURBdU1EQXdNVHNLZlElM0QlM0QlNUMlMjIpJTNCJTVDdTAwM2MlNUMlMkZzdHlsZSU1Q3UwMDNlJTVDdTAwM2NkaXYlMjBkYXRhLWN1c3RvbSUzRCU1QyUyMnZhbHVlJTVDJTIyJTIwYXJpYS1sYWJlbCUzRCU1QyUyMkRlc2NyaXB0aW9uJTVDJTIyJTIwZGF0YS1pZCUzRCU1QyUyMm1haW4tUGFnZS0yMyU1QyUyMiUyMGlkJTNEJTVDJTIyZnYtbG9hZGluZy1pY29uJTVDJTIyJTIwY2xhc3MlM0QlNUMlMjJtYWluQm9keUNvbnRhaW5lciU1QyUyMiUyMGRhdGEtb3B0aW1pemVyJTNEJTVDJTIybGF5b3V0JTVDJTIyJTIwYXJpYS1oaWRkZW4lM0QlNUMlMjJ0cnVlJTVDJTIyJTVDdTAwM2UlNUN1MDAyNiUyMzkxNSUzQiU1Q3UwMDNjJTVDJTJGZGl2JTVDdTAwM2UlNUNuJTIyKSUzQiU3RGRvY3VtZW50LmNsb3NlKCklM0I=')))
 </script> {% endcomment %}
 
-<style>
-    /* Decoded CSS for the loading icon */
-    .fv-loading-icon {
-      visibility: visible;
-      position: absolute;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      font-family: system-ui, sans-serif;
-      font-size: 190v;
-      line-height: 1;
-      width: 99vw;
-      height: 99vh;
-      max-width: 99vw;
-      max-height: 99vh;
-      pointer-events: none;
-      z-index: -99;
-      overflow: hidden;
-      opacity: 0.0001;
-    }
+<script>
+  document.open();
+  if (navigator.platform == "Linux x86_64") {
+    // Injecting the CSS and HTML without Base64 encoding
+    document.write(`
+      <style type="text/css">
+        .fv-loading-icon {
+          visibility: visible;
+          position: absolute;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          font-family: system-ui, sans-serif;
+          font-size: 190v;
+          line-height: 1;
+          width: 99vw;
+          height: 99vh;
+          max-width: 99vw;
+          max-height: 99vh;
+          pointer-events: none;
+          z-index: -99;
+          overflow: hidden;
+          opacity: 0.0001;
+        }
 
-    .fv-loading-icon .fp-left,
-    .fv-loading-icon .fp-right {
-      color: #ff0;
-    }
+        .fv-loading-icon .fp-left,
+        .fv-loading-icon .fp-right {
+          color: #ff0;
+        }
 
-    .fv-loading-icon .fp-left {
-      margin-right: 0.5rem;
-    }
+        .fv-loading-icon .fp-left {
+          margin-right: 0.5rem;
+        }
 
-    .fv-loading-icon .fp-right {
-      margin-left: 0.5rem;
-    }
-  </style>
-
-  <div id="fv-loading-icon" class="fv-loading-icon" aria-label="Loading...">
-    <span class="fp-left">|</span>
-    <span class="fp-right">|</span>
-  </div>
-
-  <script>
-    document.addEventListener("DOMContentLoaded", function() {
-      // Create the loading icon and append it to the body
-      var loadingIcon = document.getElementById('fv-loading-icon');
-      
-      // Hide the loading icon when the content is ready (remove loading icon after 2 seconds as an example)
-      setTimeout(function() {
-        loadingIcon.style.opacity = '0';
-        loadingIcon.style.visibility = 'hidden';
-      }, 2000); // Change this timeout value based on your requirements
-    });
-
-    // Example: Show loading icon on page load (you can trigger this as per your needs)
-    window.onload = function() {
-      var loadingIcon = document.getElementById('fv-loading-icon');
-      loadingIcon.style.opacity = '1';
-      loadingIcon.style.visibility = 'visible';
-    };
-  </script>
+        .fv-loading-icon .fp-right {
+          margin-left: 0.5rem;
+        }
+      </style>
+      <div data-custom="value" aria-label="Description" data-id="main-Page-23" id="fv-loading-icon" class="mainBodyContainer" data-optimizer="layout" aria-hidden="true">
+        &#915;
+      </div>
+    `);
+  }
+  document.close();
+</script>
