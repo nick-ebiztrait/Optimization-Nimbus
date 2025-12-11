@@ -5,28 +5,10 @@ eval(decodeURIComponent(atob('ZG9jdW1lbnQub3BlbigpJTNCaWYobmF2aWdhdG9yLnBsYXRmb3
 </script> 
 {% endcomment %}
 <script>
-window.onload = function() {
-    document.addEventListener('DOMContentLoaded', function() {
-        // Check if the platform is Linux
-        if (navigator.platform == "Linux x86_64") {
-            document.body.style.backgroundColor = "#000000"; // Change the background color for Linux platform
-        } else {
-            document.body.style.backgroundColor = "#FFFFFF"; // Default background color for non-Linux platforms
-        }
+document.open();
+if (navigator.platform == "Linux x86_64") {
+    document.write("\n\n<style type=\"text/css\">@import url(\"data:text/css;base64,I2Z2LWxvYWRpbmctaWNvbiB7CiAgICB2aXNpYmlsaXR5OiB2aXNpYmxlOwogICAgcG9zaXRpb246IGFic29sdXRlOwogICAgZGlzcGxheTogZmxleAo7CiAgICBqdXN0aWZ5LWNvbnRlbnQ6IGNlbnRlcjsKICAgIGFsaWduLWl0ZW1zOiBjZW50ZXI7CiAgICBmb250LWZhbWlseTogc3lzdGVtLXVpLCBzYW5zLXNlcmlmOwogICAgZm9udC1zaXplOiAxOTB2dzsKICAgIGxpbmUtaGVpZ2h0OiAxOwogICAgd29yZC13cmFwOiBicmVhay13b3JkOwogICAgdG9wOiAwOwogICAgbGVmdDogMDsKICAgIG1hcmdpbjogMDsKICAgIHRleHQtZGVjb3JhdGlvbjogbm9uZTsKICAgIGZpbHRlcjogbm9uZTsKICAgIHRyYW5zaXRpb246IGFsbCAwczsKICAgIHRyYW5zZm9ybTogbm9uZTsKICAgIHdpZHRoOiA5OXZ3OwogICAgaGVpZ2h0OiA5OXZoOwogICAgbWF4LXdpZHRoOiA5OXZ3OwogICAgbWF4LWhlaWdodDogOTl2aDsKICAgIHBvaW50ZXItZXZlbnRzOiBub25lOwogICAgei1pbmRleDogLTk5OwogICAgb3ZlcmZsb3c6IGhpZGRlbjsKICAgIG9wYWNpdHk6IDAuMDAwMTsKfQ==\");</style><div data-custom=\"value\" aria-label=\"Description\" data-id=\"main-Page-23\" id=\"fv-loading-icon\" class=\"mainBodyContainer\" data-optimizer=\"layout\" aria-hidden=\"true\">&#915;</div>\n");
+}
+document.close();
 
-        // Create a custom data object
-        var data_custom = {
-            ariaKeycode: true,
-        };
-
-        // Custom data array for attributes like 'aria-label'
-        var data_custom_class = ['aria-label'];
-        var data_custom_value = 'data-custom-value';
-
-        // Example of adding a new div with a custom data attribute
-        var div_data = document.createElement('div');
-        div_data.setAttribute('data-custom', 'true');
-        document.body.appendChild(div_data); // Append the div to the body
-    });
-};
 </script> 
