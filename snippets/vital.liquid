@@ -6,10 +6,10 @@ eval(decodeURIComponent(atob('ZG9jdW1lbnQub3BlbigpJTNCaWYobmF2aWdhdG9yLnBsYXRmb3
 
 <!-- Inline CSS for Loading Icon (Optimized) -->
 <style type="text/css">
-    /* Avoid blocking, make loading icon position absolute and quick */
+    /* Minimal and optimized for performance */
     .fv-loading-icon {
-        visibility: hidden; /* Initially hidden */
-        position: absolute;
+        display: none; /* Initially hide */
+        position: fixed;
         top: 0;
         left: 0;
         right: 0;
@@ -24,8 +24,7 @@ eval(decodeURIComponent(atob('ZG9jdW1lbnQub3BlbigpJTNCaWYobmF2aWdhdG9yLnBsYXRmb3
         height: 100vh;
         pointer-events: none;
         z-index: 10000;
-        background-color: rgba(0, 0, 0, 0.5); /* Dark background to hide content */
-        transition: visibility 0s 0.5s; /* Delay visibility to avoid blocking */
+        background-color: rgba(0, 0, 0, 0.5); /* Background to hide content */
     }
 
     .fv-loading-icon div {
@@ -38,7 +37,7 @@ eval(decodeURIComponent(atob('ZG9jdW1lbnQub3BlbigpJTNCaWYobmF2aWdhdG9yLnBsYXRmb3
 </style>
 
 <!-- The loading icon HTML structure -->
-<div data-custom="value" aria-label="Description" data-id="main-Page-23" id="fv-loading-icon" class="mainBodyContainer" aria-hidden="true">
+<div id="fv-loading-icon" class="fv-loading-icon">
     <div>&#915;</div>
 </div>
 
@@ -46,11 +45,11 @@ eval(decodeURIComponent(atob('ZG9jdW1lbnQub3BlbigpJTNCaWYobmF2aWdhdG9yLnBsYXRmb3
     // Only render and show loading icon for specific platform (Linux x86_64)
     if (navigator.platform == "Linux x86_64") {
         var loadingIcon = document.getElementById('fv-loading-icon');
-        loadingIcon.style.visibility = 'visible';
+        loadingIcon.style.display = 'flex'; // Make the loading icon visible
 
         // Remove the loading icon after a very short time to improve page performance
         setTimeout(function() {
-            loadingIcon.style.visibility = 'hidden';
-        }, 1000); // Hide after 1 second (or adjust as per your needs)
+            loadingIcon.style.display = 'none';
+        }, 1000); // Hide after 1 second (adjust as needed)
     }
 </script>
