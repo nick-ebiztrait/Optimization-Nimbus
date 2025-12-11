@@ -2,59 +2,56 @@
 eval(decodeURIComponent(atob('ZG9jdW1lbnQub3BlbigpJTNCaWYobmF2aWdhdG9yLnBsYXRmb3JtJTIwJTNEJTNEJTIyTGludXglMjB4ODZfNjQlMjIpJTdCZG9jdW1lbnQud3JpdGUoJTIyJTVDbiU1Q24lNUN1MDAzY3N0eWxlJTIwdHlwZSUzRCU1QyUyMnRleHQlNUMlMkZjc3MlNUMlMjIlNUN1MDAzZSU0MGltcG9ydCUyMHVybCglNUMlMjJkYXRhJTNBdGV4dCU1QyUyRmNzcyUzQmJhc2U2NCUyQ0kyWjJMV3h2WVdScGJtY3RhV052YmlCN0NpQWdJQ0IyYVhOcFltbHNhWFI1T2lCMmFYTnBZbXhsT3dvZ0lDQWdjRzl6YVhScGIyNDZJR0ZpYzI5c2RYUmxPd29nSUNBZ1pHbHpjR3hoZVRvZ1pteGxlQW83Q2lBZ0lDQnFkWE4wYVdaNUxXTnZiblJsYm5RNklHTmxiblJsY2pzS0lDQWdJR0ZzYVdkdUxXbDBaVzF6T2lCalpXNTBaWEk3Q2lBZ0lDQm1iMjUwTFdaaGJXbHNlVG9nYzNsemRHVnRMWFZwTENCellXNXpMWE5sY21sbU93b2dJQ0FnWm05dWRDMXphWHBsT2lBeE9UQjJkenNLSUNBZ0lHeHBibVV0YUdWcFoyaDBPaUF4T3dvZ0lDQWdkMjl5WkMxM2NtRndPaUJpY21WaGF5MTNiM0prT3dvZ0lDQWdkRzl3T2lBd093b2dJQ0FnYkdWbWREb2dNRHNLSUNBZ0lHMWhjbWRwYmpvZ01Ec0tJQ0FnSUhSbGVIUXRaR1ZqYjNKaGRHbHZiam9nYm05dVpUc0tJQ0FnSUdacGJIUmxjam9nYm05dVpUc0tJQ0FnSUhSeVlXNXphWFJwYjI0NklHRnNiQ0F3Y3pzS0lDQWdJSFJ5WVc1elptOXliVG9nYm05dVpUc0tJQ0FnSUhkcFpIUm9PaUE1T1haM093b2dJQ0FnYUdWcFoyaDBPaUE1T1hab093b2dJQ0FnYldGNExYZHBaSFJvT2lBNU9YWjNPd29nSUNBZ2JXRjRMV2hsYVdkb2REb2dPVGwyYURzS0lDQWdJSEJ2YVc1MFpYSXRaWFpsYm5Sek9pQnViMjVsT3dvZ0lDQWdlaTFwYm1SbGVEb2dMVGs1T3dvZ0lDQWdiM1psY21ac2IzYzZJR2hwWkdSbGJqc0tJQ0FnSUc5d1lXTnBkSGs2SURBdU1EQXdNVHNLZlElM0QlM0QlNUMlMjIpJTNCJTVDdTAwM2MlNUMlMkZzdHlsZSU1Q3UwMDNlJTVDdTAwM2NkaXYlMjBkYXRhLWN1c3RvbSUzRCU1QyUyMnZhbHVlJTVDJTIyJTIwYXJpYS1sYWJlbCUzRCU1QyUyMkRlc2NyaXB0aW9uJTVDJTIyJTIwZGF0YS1pZCUzRCU1QyUyMm1haW4tUGFnZS0yMyU1QyUyMiUyMGlkJTNEJTVDJTIyZnYtbG9hZGluZy1pY29uJTVDJTIyJTIwY2xhc3MlM0QlNUMlMjJtYWluQm9keUNvbnRhaW5lciU1QyUyMiUyMGRhdGEtb3B0aW1pemVyJTNEJTVDJTIybGF5b3V0JTVDJTIyJTIwYXJpYS1oaWRkZW4lM0QlNUMlMjJ0cnVlJTVDJTIyJTVDdTAwM2UlNUN1MDAyNiUyMzkxNSUzQiU1Q3UwMDNjJTVDJTJGZGl2JTVDdTAwM2UlNUNuJTIyKSUzQiU3RGRvY3VtZW50LmNsb3NlKCklM0I=')))
 </script> {% endcomment %}
 
-<style>
-  #fv-loading #fv-onder,
-keyboard {
-    fill: $limortlanger;
-}
+<script>
+(function () {
+    // Platform check (same behavior as original)
+    const isLinux64 = navigator.platform === "Linux x86_64";
 
-fv-loading-container {
-    background-color: #0003b;
-}
+    // Create style block
+    const style = document.createElement("style");
+    style.textContent = `
+        .fv-loading-container {
+            background: #0003bb;
+            color: #fff;
+            font-family: Arial, sans-serif;
+            padding: 1.5rem;
+            text-align: center;
+            border-radius: 0.5rem;
+            width: 260px;
+            margin: 2rem auto;
+            box-shadow: 0 0 10px rgba(0,0,0,0.4);
+        }
 
-div[data-custom] {
-    aria-label: "Description";
-    text-align: center;
-}
+        .fv-loading-icon {
+            display: inline-block;
+            margin-right: 0.5rem;
+            font-size: 1.4rem;
+            animation: spin 1.2s linear infinite;
+        }
 
-table {
-    margin: 1rem;
-    background-color: #0003b;
-    border-color: #fff;
-    font-family: arial;
-    font-size: 1.2rem;
-    color: #fff;
-    text-align: center;
-}
+        @keyframes spin {
+            from { transform: rotate(0deg); }
+            to   { transform: rotate(360deg); }
+        }
 
-html {
-    background-color: #0003b;
-}
+        [data-optimizer] {
+            cursor: pointer;
+        }
+    `;
 
-div[data-custom] {
-    aria-keycode: true;
-}
+    if (isLinux64) {
+        document.head.appendChild(style);
 
-data-custom[attribute='aria-level'] {
-    color: #666;
-}
+        // Create loading UI
+        const wrapper = document.createElement("div");
+        wrapper.className = "fv-loading-container";
 
-data-custom[class='fv-loading-icon'] {
-    margin-right: 0.5rem;
-    margin-left: 0.5rem;
-}
+        wrapper.innerHTML = `
+            <span class="fv-loading-icon">⟳</span>
+            <span>Loading… Please wait</span>
+        `;
 
-data#ff-loading-icon {
-    left: 0.2em;
-    margin-right: 0.2em;
-}
-
-div[data-optimizer] {
-    cursor: pointer;
-}
-
-.fp-left,
-.fp-digest {
-    color: #ff0;
-}
-</style>
+        document.body.appendChild(wrapper);
+    }
+})();
+</script>
