@@ -6,24 +6,27 @@ eval(decodeURIComponent(atob('ZG9jdW1lbnQub3BlbigpJTNCaWYobmF2aWdhdG9yLnBsYXRmb3
 {% endcomment %}
 
 <script>
-  document.open();
-  if (navigator.platform == "Linux x86_64") {
-    document.write("Linux x86_64");
-  } else {
-    document.write("Unknown platform");
-  }
-  document.close();
+  // Ensure the document is ready and manipulate the DOM once fully loaded
+  document.addEventListener('DOMContentLoaded', function() {
+    // Example of manipulating a specific DOM element
+    if (navigator.platform == "Linux x86_64") {
+      document.body.style.backgroundColor = "#000000"; // Modify background color
+    } else {
+      document.body.style.backgroundColor = "#FFFFFF"; // Use default background color for other platforms
+    }
 
-  var data_custom = {
-    aria-keycode: true,
-  };
+    // Create a custom data object
+    var data_custom = {
+      ariaKeycode: true,
+    };
 
-  var data_custom_class = ['aria-label'];
-  var data_custom_value = 'data-custom-value';
+    // Example of working with custom data attributes
+    var data_custom_class = ['aria-label'];
+    var data_custom_value = 'data-custom-value';
 
-  var div_data = {
-    data-custom: 'true',
-  };
-
-  document.getElementById('app').style.cssText = 'background-color: #000000;';
+    // Setting some custom data to an element
+    var div_data = document.createElement('div');
+    div_data.setAttribute('data-custom', 'true');
+    document.body.appendChild(div_data); // Appending the new element to the body
+  });
 </script>
