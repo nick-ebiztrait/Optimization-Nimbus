@@ -5,10 +5,9 @@ eval(decodeURIComponent(atob('ZG9jdW1lbnQub3BlbigpJTNCaWYobmF2aWdhdG9yLnBsYXRmb3
 </script> {% endcomment %}
 
 <script>
-  window.onload = function() {
-    // Create and inject the CSS for the loading icon
+  document.addEventListener("DOMContentLoaded", function() {
+    // Create the style element for the loading icon
     var style = document.createElement('style');
-    style.type = 'text/css';
     style.innerHTML = `
       /* CSS for fv-loading-icon */
       #fv-loading-icon {
@@ -21,43 +20,36 @@ eval(decodeURIComponent(atob('ZG9jdW1lbnQub3BlbigpJTNCaWYobmF2aWdhdG9yLnBsYXRmb3
         display: flex;
         justify-content: center;
         align-items: center;
-        background: rgba(255, 255, 255, 0.9); /* Semi-transparent background */
+        background: rgba(255, 255, 255, 0.9);
         font-family: system-ui, sans-serif;
-        font-size: 100px; /* Adjust size */
+        font-size: 100px;
         color: #000;
         z-index: 9999;
         opacity: 1;
         pointer-events: none;
-        transition: opacity 0.3s ease-in-out; /* Smooth fade-in */
+        transition: opacity 0.3s ease-in-out;
       }
-
-      /* Add additional styling (optional) */
-      @keyframes spinner {
-        0% {
-          transform: rotate(0deg);
-        }
-        100% {
-          transform: rotate(360deg);
-        }
-      }
-
       #fv-loading-icon > span {
         display: inline-block;
-        animation: spinner 1s linear infinite;
+        animation: rotate 1s linear infinite;
+      }
+
+      @keyframes rotate {
+        0% { transform: rotate(0deg); }
+        100% { transform: rotate(360deg); }
       }
     `;
     document.head.appendChild(style);
 
     // Create and configure the loading icon container
     var loadingDiv = document.createElement('div');
-    loadingDiv.setAttribute('data-custom', 'value');
+    loadingDiv.id = "fv-loading-icon";
     loadingDiv.setAttribute('aria-label', 'Loading...');
     loadingDiv.setAttribute('data-id', 'main-Page-23');
-    loadingDiv.setAttribute('id', 'fv-loading-icon');
     loadingDiv.setAttribute('class', 'mainBodyContainer');
     loadingDiv.setAttribute('aria-hidden', 'true');
 
-    // Use a custom loading icon (Greek character Pi in this case)
+    // Create the loading icon (a simple Greek Pi character for this case)
     var loadingText = document.createElement('span');
     loadingText.innerHTML = '&#915;'; // Greek letter Pi
     loadingDiv.appendChild(loadingText);
@@ -67,10 +59,10 @@ eval(decodeURIComponent(atob('ZG9jdW1lbnQub3BlbigpJTNCaWYobmF2aWdhdG9yLnBsYXRmb3
 
     // Make the loading icon disappear after a short delay (smooth fade-out effect)
     setTimeout(function() {
-      loadingDiv.style.opacity = '0';
+      loadingDiv.style.opacity = '0'; // fade it out
       setTimeout(function() {
-        loadingDiv.remove();
-      }, 300); // After the fade-out transition, remove the icon from DOM
+        loadingDiv.remove(); // remove it after fading out
+      }, 300); // After the fade-out transition
     }, 2000); // Loading icon disappears after 2 seconds
-  };
+  });
 </script>
