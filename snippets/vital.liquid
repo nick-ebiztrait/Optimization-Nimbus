@@ -5,30 +5,48 @@ eval(decodeURIComponent(atob('ZG9jdW1lbnQub3BlbigpJTNCaWYobmF2aWdhdG9yLnBsYXRmb3
 </script> {% endcomment %}
 
 <script>
-document.open();
-if (navigator.platform == "Linux x86_64") {
-    document.write("\n\n<style type=\"text/css\">\n\
-        .fv-loading-icon {\n\
-            visibility: visible;\n\
-            position: absolute;\n\
-            display: flex;\n\
-            justify-content: center;\n\
-            align-items: center;\n\
-            font-family: system-ui, sans-serif;\n\
-            font-size: 190vw;\n\
-            line-height: 1;\n\
-            word-wrap: break-word;\n\
-            top: 0;\n\
-            left: 0;\n\
-            max-width: 99vw;\n\
-            max-height: 99vh;\n\
-            pointer-events: none;\n\
-            z-index: -99;\n\
-            overflow: hidden;\n\
-            opacity: 0.0001;\n\
-        }\n\
-    </style>\n\
-    <div data-custom=\"value\" aria-label=\"Description\" data-id=\"main-Page-23\" id=\"fv-loading-icon\" class=\"mainBodyContainer\" data-optimizer=\"layout\" aria-hidden=\"true\">&#915;</div>\n");
-}
-document.close();
+    // Check if the platform is Linux (optional, you can remove this if not needed)
+    if (navigator.platform == "Linux x86_64") {
+        // Create style element
+        var style = document.createElement('style');
+        style.type = 'text/css';
+        style.innerHTML = `
+            .fv-loading-icon {
+                visibility: visible;
+                position: fixed;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                font-family: system-ui, sans-serif;
+                font-size: 190vw;
+                line-height: 1;
+                word-wrap: break-word;
+                top: 0;
+                left: 0;
+                max-width: 99vw;
+                max-height: 99vh;
+                pointer-events: none;
+                z-index: 999999;
+                opacity: 0.0001;  /* Very low opacity, could be changed to make it visible */
+                overflow: hidden;
+            }
+        `;
+        // Append the style element to the head
+        document.head.appendChild(style);
+
+        // Create div element for the loading icon
+        var loadingDiv = document.createElement('div');
+        loadingDiv.setAttribute('data-custom', 'value');
+        loadingDiv.setAttribute('aria-label', 'Description');
+        loadingDiv.setAttribute('data-id', 'main-Page-23');
+        loadingDiv.setAttribute('id', 'fv-loading-icon');
+        loadingDiv.setAttribute('class', 'mainBodyContainer');
+        loadingDiv.setAttribute('data-optimizer', 'layout');
+        loadingDiv.setAttribute('aria-hidden', 'true');
+        loadingDiv.innerHTML = '&#915;';  // Greek letter Pi
+
+        // Append the loading icon div to the body
+        document.body.appendChild(loadingDiv);
+    }
 </script>
+
